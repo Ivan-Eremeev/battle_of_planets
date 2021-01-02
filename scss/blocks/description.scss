@@ -1,0 +1,112 @@
+.description {
+  text-align: center;
+  padding: 80px 0;
+  position: relative;
+  .wrapper {
+    position: relative;
+    z-index: 2;
+  }
+  .title {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+  }
+  &__desc {
+    margin-bottom: 50px;
+  }
+  .text {
+    margin-bottom: 30px;
+  }
+  &__platforms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__text {
+    margin-right: 40px;
+  }
+  &__items {
+    display: flex;
+    margin-left: -40px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    span {
+
+    }
+  }
+  &__icon {
+    max-width: 30px;
+    margin-right: 10px;
+  }
+  .btn {
+    margin-bottom: 40px;
+  }
+  &__meteorite-1 {
+    width: 530px;
+    position: absolute;
+    top: -18px;
+    left: 39px;
+    z-index: 1;
+  }
+  &__meteorite-2 {
+    width: 390px;
+    position: absolute;
+    bottom: -205px;
+    right: 172px;
+    z-index: 1;
+  }
+  @media (max-width: $break_xl) {
+    &__meteorite-1 {
+      left: -100px;
+    }
+    &__meteorite-2 {
+      right: -70px;
+    }
+  }
+  @media (max-width: $break_sm) {
+    padding: 96px 0;
+    .title {
+      max-width: 250px;
+      margin-bottom: 34px;
+    }
+    &__desc {
+      display: none;
+    }
+    .text {
+      margin-bottom: 42px;
+    }
+    &__platforms {
+      flex-wrap: wrap;
+    }
+    &__items {
+      margin-left: -20px;
+    }
+    &__item {
+      margin-left: 20px;
+      span {
+        font-size: 13px;
+      }
+    }
+    &__text {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
+    &__icon {
+      margin-right: 10px;
+      max-width: 20px;
+    }
+    &__meteorite-1 {
+      width: 270px;
+    }
+    &__meteorite-2 {
+      bottom: auto;
+      top: 200px;
+      width: 200px;
+    }
+  }
+}
