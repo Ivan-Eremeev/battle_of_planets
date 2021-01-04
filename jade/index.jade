@@ -42,7 +42,7 @@ block content
 					.title Тебе предстоит пережить планетарное уничтожение!
 					.description__desc Stage 1 - Игра без NFT<br>(status alfa)
 					.text Попробуй прямо сейчас!
-					.btn
+					a(href="#").btn
 						span.btn__text В игру!
 						span.btn__arrow
 					.description__platforms
@@ -60,6 +60,87 @@ block content
 				img(src="img/meteorite_1.png", alt="").description__meteorite-1.js-parallaxMouse(data-direction="xy" data-intensity="2" data-speed="700")
 				img(src="img/meteorite_2.png", alt="").description__meteorite-2.js-parallaxMouse(data-direction="xy" data-intensity="2" data-speed="700" data-revers="true")
 			//	/description
+
+			// gameplay
+			.gameplay
+				.wrapper
+					.title Gameplay
+					.text Цель игрока - уничтожить защиту планеты противника
+					.gameplay__row
+						.gameplay__items
+							.row
+								.gameplay__col
+									.gameplay__icon
+										img(src="img/icon_1.svg", alt="")
+									.gameplay__text Поле боя - межпланетное пространство
+								.gameplay__col
+									.gameplay__icon
+										img(src="img/icon_2.svg", alt="")
+									.gameplay__text Каждому игроку даются карты, у которой свои особенности
+								.gameplay__col
+									.gameplay__icon
+										img(src="img/icon_3.svg", alt="")
+									.gameplay__text Космические катаклизмы разрушают хрупкую сферу жизни
+								.gameplay__col
+									.gameplay__icon
+										img(src="img/icon_4.svg", alt="")
+									.gameplay__text 160 000 000 000 000 000 возможных комбинаций улучшений
+						.gameplay__video.js-video
+							img(src="img/preview.jpg", alt="")
+							video(src="video/video.mp4")
+							.gameplay__play#play
+								img(src="img/play.svg", alt="")
+			//	/gameplay
+
+			// methods
+			.methods
+				.wrapper
+					.title 5 способов играя, зарабатывать
+					.row
+						.methods__col
+							.methods__item
+								.methods__num 1
+								.methods__text Получай токены и NFT
+									span , а также части NFT после каждого боя с противником
+						.methods__col
+							.methods__item
+								.methods__num 2
+								.methods__text 
+									span Выигрывай у врага 
+									| планетарную валюту
+						.methods__col
+							.methods__item
+								.methods__num 3
+								.methods__text
+									span Улучшай свои планетарные карточные сущности, выпускай улучшенные версии в сеть и 
+									| продавай их на площадках
+						.methods__col
+							.methods__item
+								.methods__num 4
+								.methods__text Стейк прямо в игре
+						.methods__col
+							.methods__item
+								.methods__num 5
+								.methods__text Реферальная система 
+									span до 6-и уровней в глубину
+			//	/methods
+
+			// tournaments
+			.tournaments
+				.wrapper
+					.title ТУРНИРЫ
+					.text
+						span Участие в турнире может принести очень большой куш, представь - 
+						| обыграть 64 игроков и стать владельцем их планетарных ресурсов. 
+						span Черная дыра и энтропия то, что ждет твоих врагов. 
+					.btn.btn--disable
+						span.btn__text В разработке
+						span.btn__arrow
+				.tournaments__planet.tournaments__planet--1
+					img(src="img/planet_2.png", alt="")
+				.tournaments__planet.tournaments__planet--2
+					img(src="img/planet_3.png", alt="")
+			//	/tournaments
 			
 		include blocks/footer.jade
 

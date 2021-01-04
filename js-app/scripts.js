@@ -330,25 +330,24 @@ $(document).ready(function () {
 	// };
 	// focusInput();
 
-	// // Запуск и остановка видео html5
-	// var playing = false;
-	// function videoControll(videoConteiner) {
-	// 	videoConteiner.click(function() {
-	// 		var video = videoConteiner.find('video'),
-	// 				img = videoConteiner.find('img');
-	// 		img.css({
-	// 			display: 'none'});
-	// 		if (playing == false) {
-	// 			video.trigger('play');
-	// 			playing = true;
-	// 		}
-	// 		else {
-	// 			video.trigger('pause');
-	// 			playing = false;
-	// 		}
-	// 	});
-	// };
-	// videoControll();
+	// Запуск и остановка видео html5
+	function videoControll(videoConteiner) {
+		if (videoConteiner.length) {
+			videoConteiner.each(function () {
+				var container = $(this),
+						video = container.find('video'),
+						playing = true;
+				container.click(function () {
+					if (playing) {
+						video.trigger('play').attr('controls', '');
+						container.addClass('play');
+						playing = false;
+					}
+				});
+			});	
+		}
+	};
+	videoControll($('.js-video'));
 
 	// // 3d эффект вращения элемента при наведении
 	// function rotate(element) {

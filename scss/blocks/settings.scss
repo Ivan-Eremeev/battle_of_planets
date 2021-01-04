@@ -103,6 +103,7 @@ body {
   position: relative;
   cursor: pointer;
   transition: 0.3s;
+  user-select: none;
   &__arrow {
     display: flex;
     justify-content: center;
@@ -146,12 +147,25 @@ body {
       width: 100%;
     }
   }
+  &--disable {
+    opacity: 0.3;
+    cursor: default;
+    &:before {
+      display: none;
+    }
+    &:hover {
+      box-shadow: none;
+    }
+  }
 }
 .text {
   font-size: 22px;
   text-align: center;
   @media (max-width: $break_sm) {
     font-size: 19px;
+  }
+  span {
+    color: #AEBEF9;
   }
 }
 @keyframes rotate {
