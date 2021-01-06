@@ -1,5 +1,6 @@
 .cap {
-  margin-bottom: 100px;
+  margin-bottom: 147px;
+  position: relative;
   &__col {
     @include col(6);
     &--1 {
@@ -51,5 +52,12 @@
   }
   &__icon {
 
+  }
+  &__meteorite {
+    width: 800px;
+    position: absolute;
+    top: 45px;
+    left: -207px;
+    z-index: 1;
   }
 }

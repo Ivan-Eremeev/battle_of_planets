@@ -23,7 +23,7 @@ block content
 		.content
 
 			// welcome
-			.welcome
+			section.welcome
 				.wrapper
 					.welcome__content
 						.title Battle of Planets
@@ -37,7 +37,7 @@ block content
 			//	/welcome
 
 			// description
-			.description
+			section.description
 				.wrapper
 					.title Тебе предстоит пережить планетарное уничтожение!
 					.description__desc Stage 1 - Игра без NFT<br>(status alfa)
@@ -63,7 +63,7 @@ block content
 			//	/description
 
 			// gameplay
-			.gameplay
+			section.gameplay
 				.wrapper
 					.title Gameplay
 					.text Цель игрока - уничтожить защиту планеты противника
@@ -94,7 +94,7 @@ block content
 			//	/gameplay
 
 			// methods
-			.methods
+			section.methods
 				.wrapper
 					.title 5 способов играя, зарабатывать
 					.row
@@ -127,7 +127,7 @@ block content
 			//	/methods
 
 			// tournaments
-			.tournaments
+			section.tournaments
 				.wrapper
 					.title ТУРНИРЫ
 					.text
@@ -144,7 +144,7 @@ block content
 			//	/tournaments
 
 			// crafting
-			.crafting
+			section.crafting
 				.wrapper
 					.crafting__blur
 						.title Крафтинг
@@ -161,7 +161,7 @@ block content
 			//	/crafting
 
 			// award
-			.award
+			section.award
 				.wrapper
 					.title Получай лут за каждый бой
 					.row
@@ -179,12 +179,12 @@ block content
 								.text Редкие и уникальные<br>NFT-карты
 							.text
 								span Позволят побеждать более сильных противников и получать больше лута и планетарных ресурсов
-				img(src="img/meteorite_3.png", alt="" data-direction="xy" data-intensity="2" data-speed="700").award__meteorite.js-parallaxMouse
+				img(src="img/meteorite_3.png", alt="").award__meteorite
 				img(src="img/cometa_2.png", alt="").award__cometa
 			//	/award
 
 			// token
-			.token
+			section.token
 				.wrapper
 					.token__head
 						.title Token distribution
@@ -220,7 +220,7 @@ block content
 			//	/token
 
 			// cap
-			.cap
+			section.cap
 				.wrapper
 					.row
 						.cap__col.cap__col--1
@@ -237,12 +237,41 @@ block content
 									img(src="img/icon_8.svg", alt="").cap__icon
 									.cap__text 5 000 000
 										span $
+				img(src="img/meteorite_4.png", alt="").cap__meteorite.js-parallaxMouse(data-direction="xy" data-intensity="2" data-speed="700" data-revers="true")
 			//	/cap
 
 			// reservation
-			.reservation
+			section.reservation
 				.wrapper
 					.title Резервирование токенов
+					.reservation__diagram
+						img(src="img/diagram.svg", alt="").reservation__img
+						.reservation__section.reservation__section--1.js-parallaxMouse(data-direction="xy" data-intensity="0.2" data-speed="700")
+							img(src="img/diagram_line_1.svg", alt="").reservation__line.reservation__line--1
+							.reservation__container
+								.reservation__title 3%
+								.reservation__text Маркетинг
+						.reservation__section.reservation__section--2.js-parallaxMouse(data-direction="xy" data-intensity="0.3" data-speed="700")
+							img(src="img/diagram_line_2.svg", alt="").reservation__line.reservation__line--2
+							.reservation__container
+								.reservation__title 10%
+								.reservation__text Космичесикй фонд
+						.reservation__section.reservation__section--3.js-parallaxMouse(data-direction="xy" data-intensity="0.7" data-speed="700")
+							img(src="img/diagram_line_3.svg", alt="").reservation__line.reservation__line--3
+							.reservation__container
+								.reservation__title 45%
+								.reservation__text Команде, POS майнинг, ingame распределение 
+						.reservation__section.reservation__section--4.js-parallaxMouse(data-direction="xy" data-intensity="0.5" data-speed="700")
+							img(src="img/diagram_line_4.svg", alt="").reservation__line.reservation__line--4
+							.reservation__container
+								.reservation__title 40%
+								.reservation__text Все sale-этапы
+						.reservation__section.reservation__section--5.js-parallaxMouse(data-direction="xy" data-intensity="0.7" data-speed="700")
+							img(src="img/diagram_line_5.svg", alt="").reservation__line.reservation__line--5
+							.reservation__container
+								.reservation__title 2%
+								.reservation__text Едвайзерам
+				img(src="img/meteorite_5.png", alt="").reservation__meteorite
 			//	/reservation
 			
 		include blocks/footer.jade

@@ -1203,7 +1203,8 @@ body {
     z-index: 1; }
 
 .cap {
-  margin-bottom: 100px; }
+  margin-bottom: 147px;
+  position: relative; }
   .cap__col {
     width: 50%; }
     .cap__col--1 .cap__item {
@@ -1249,3 +1250,71 @@ body {
     .cap__text span {
       color: #455c6f;
       margin-left: 20px; }
+  .cap__meteorite {
+    width: 800px;
+    position: absolute;
+    top: 45px;
+    left: -207px;
+    z-index: 1; }
+
+.reservation {
+  text-align: center;
+  position: relative; }
+  .reservation .title {
+    margin-bottom: 130px; }
+  .reservation__diagram {
+    display: inline-block;
+    position: relative; }
+  .reservation__section {
+    position: absolute; }
+    .reservation__section--1 {
+      top: -31px;
+      left: -114px;
+      text-align: right; }
+    .reservation__section--2 {
+      top: -30px;
+      right: -150px;
+      text-align: left; }
+    .reservation__section--3 {
+      bottom: 50px;
+      right: -294px;
+      text-align: left; }
+    .reservation__section--4 {
+      bottom: 38px;
+      left: -196px;
+      text-align: right; }
+    .reservation__section--5 {
+      top: 90px;
+      left: -196px;
+      text-align: right; }
+  .reservation__line {
+    position: absolute; }
+    .reservation__line--1 {
+      top: 35px;
+      left: 100%; }
+    .reservation__line--2 {
+      top: 25px;
+      right: 100%; }
+    .reservation__line--3 {
+      top: -35px;
+      right: 100%; }
+    .reservation__line--4 {
+      top: -70px;
+      left: 100%; }
+    .reservation__line--5 {
+      top: 35px;
+      left: 100%; }
+  .reservation__container {
+    max-width: 300px; }
+  .reservation__title {
+    font-size: 40px;
+    margin-bottom: 10px; }
+  .reservation__text {
+    font-size: 22px;
+    color: #AEBEF9; }
+  .reservation__meteorite {
+    width: 700px;
+    position: absolute;
+    top: 0;
+    right: 140px;
+    z-index: 1; }

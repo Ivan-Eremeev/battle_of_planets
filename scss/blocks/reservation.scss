@@ -1,3 +1,83 @@
 .reservation {
-  
+  text-align: center;
+  position: relative;
+  .title {
+    margin-bottom: 130px;
+  }
+  &__diagram {
+    display: inline-block;
+    position: relative;
+  }
+  &__img {
+    
+  }
+  &__section {
+    position: absolute;
+    &--1 {
+      top: -31px;
+      left: -114px; 
+      text-align: right;
+    }
+    &--2 {
+      top: -30px;
+      right: -150px;
+      text-align: left;
+    }
+    &--3 {
+      bottom: 50px;
+      right: -294px;
+      text-align: left;
+    }
+    &--4 {
+      bottom: 38px;
+      left: -196px;
+      text-align: right;
+    }
+    &--5 {
+      top: 90px;
+      left: -196px;
+      text-align: right;
+    }
+  }
+  &__line {
+    position: absolute;
+    &--1 {
+      top: 35px;
+      left: 100%;
+    }
+    &--2 {
+      top: 25px;
+      right: 100%;
+    }
+    &--3 {
+      top: -35px;
+      right: 100%;
+    }
+    &--4 {
+      top: -70px;
+      left: 100%;
+    }
+    &--5 {
+      top: 35px;
+      left: 100%;
+    }
+  }
+  &__container {
+    max-width: 300px;
+  }
+  &__title {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 22px;
+    color: #AEBEF9;
+  }
+  &__meteorite {
+    width: 700px;
+    position: absolute;
+    top: 0;
+    right: 140px;
+    z-index: 1;
+  }
 }
