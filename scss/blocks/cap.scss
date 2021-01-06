@@ -1,0 +1,55 @@
+.cap {
+  margin-bottom: 100px;
+  &__col {
+    @include col(6);
+    &--1 {
+      .cap__item {
+        background: linear-gradient(270deg, #000F24 0%, rgba(0, 15, 36, 0) 100%);
+        justify-content: flex-end;
+      }
+      .title {
+        right: 30px;
+      }
+      .cap__icon {
+        margin-left: 20px;
+      }
+    }
+    &--2 {
+      .cap__item {
+        background: linear-gradient(270deg, rgba(0, 15, 36, 0) 0%, #000F24 100%);
+      }
+      .title {
+        left: 20px;
+      }
+      .cap__icon {
+        margin-right: 40px;
+      }
+    }
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    display: flex;
+    padding: 40px;
+    border: 1px solid #331f36;
+    position: relative;
+  }
+  .title {
+    position: absolute;
+    top: -35px;
+  }
+  &__text {
+    font-size: 40px;
+    font-weight: bold;
+    color: #AEBEF9;
+    span {
+      color: #455c6f;
+      margin-left: 20px;
+    }
+  }
+  &__icon {
+
+  }
+}

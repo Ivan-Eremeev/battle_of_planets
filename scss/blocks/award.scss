@@ -1,10 +1,8 @@
 .award {
-  margin-bottom: 100px;
+  margin-bottom: 110px;
   position: relative;
   .wrapper {
     max-width: 840px;
-    position: relative;
-    z-index: 2;
   }
   &__col {
     @include col(6);
@@ -26,10 +24,11 @@
     text-align: left;
   }
   &__meteorite {
+    max-width: none;
     width: 700px;
     position: absolute;
     top: -150px;
-    right: 50px;
+    right: 20px;
     z-index: 1;
   }
   &__cometa {
@@ -63,6 +62,15 @@
     }
     .text {
       text-align: center;
+    }
+    &__meteorite {
+      top: -420px;
+      right: -390px;
+    }
+    &__cometa {
+      width: 250px;
+      top: 210px;
+      left: -115px;
     }
   }
 }

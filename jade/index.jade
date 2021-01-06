@@ -59,6 +59,7 @@ block content
 								span iOS &amp; MacOS
 				img(src="img/meteorite_1.png", alt="").description__meteorite-1.js-parallaxMouse(data-direction="xy" data-intensity="2" data-speed="700")
 				img(src="img/meteorite_2.png", alt="").description__meteorite-2.js-parallaxMouse(data-direction="xy" data-intensity="2" data-speed="700" data-revers="true")
+				img(src="img/planet_bg_2.png", alt="").description__planet.description__planet--top
 			//	/description
 
 			// gameplay
@@ -189,33 +190,60 @@ block content
 						.title Token distribution
 						.text Для реализации проекта необходимы средства и дополнительные человеческие ресурсы. Именно поэтому команда проекта запускает “Token distribution”, который пройдёт в несколько этапов
 					.token__container
+						.token__headTable
+							.token__item Этап
+							.token__item Дата старта
+							.token__item Стоимость
+							.token__item Бонус
 						.token__table
-							.token__row.token__row--head
-								.token__item Этап
-								.token__item Дата старта
-								.token__item Стоимость
-								.token__item Бонус
 							.token__row
-								.token__item Private-Sale
+								.token__item.token__item--name Private-Sale
 								.token__item 10 февраля 2021
 								.token__item 0,51
 								.token__item 35 %
 							.token__row
-								.token__item Public-Sale (1 этап)
+								.token__item.token__item--name Public-Sale (1 этап)
 								.token__item 11 апреля 2021
 								.token__item 0,62
 								.token__item 30 %
 							.token__row
-								.token__item Public-Sale (2 этап)
+								.token__item.token__item--name Public-Sale (2 этап)
 								.token__item 12 июня 2021
 								.token__item 0,73
 								.token__item 20 %
 							.token__row
-								.token__item Public-Sale (3 этап)
+								.token__item.token__item--name Public-Sale (3 этап)
 								.token__item 23 августа 2021
 								.token__item 0,54
 								.token__item 10 %
+				img(src="img/planet_bg_1.png", alt="").token__planet
 			//	/token
+
+			// cap
+			.cap
+				.wrapper
+					.row
+						.cap__col.cap__col--1
+							.cap__item
+								.title Soft cap	
+								.cap__row
+									.cap__text 250 000
+										span $
+									img(src="img/icon_7.svg", alt="").cap__icon
+						.cap__col.cap__col--2
+							.cap__item
+								.title Hard cap
+								.cap__row
+									img(src="img/icon_8.svg", alt="").cap__icon
+									.cap__text 5 000 000
+										span $
+			//	/cap
+
+			// reservation
+			.reservation
+				.wrapper
+					.title Резервирование токенов
+			//	/reservation
 			
 		include blocks/footer.jade
 

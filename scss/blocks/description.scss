@@ -4,10 +4,6 @@
   padding: 80px 0;
   position: relative;
   margin-bottom: 50px;
-  .wrapper {
-    position: relative;
-    z-index: 2;
-  }
   .title {
     max-width: 500px;
     margin-left: auto;
@@ -52,13 +48,21 @@
     position: absolute;
     top: -18px;
     left: 39px;
-    z-index: 1;
+    z-index: 2;
   }
   &__meteorite-2 {
     width: 390px;
     position: absolute;
     bottom: -205px;
     right: 172px;
+    z-index: 2;
+  }
+  &__planet {
+    max-width: none;
+    position: absolute;
+    top: -300px;
+    left: 50%;
+    transform: translate(-50%,0);
     z-index: 1;
   }
   @media (max-width: $break_xl) {

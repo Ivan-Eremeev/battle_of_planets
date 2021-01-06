@@ -4,7 +4,6 @@
   .wrapper {
     padding-top: 45px;
     padding-bottom: 45px;
-    position: relative;
   }
   .title {
     margin-bottom: 25px;
@@ -28,6 +27,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 2;
     img {
       width: 65%;
       height: 65%;
