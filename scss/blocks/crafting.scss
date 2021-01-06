@@ -1,0 +1,41 @@
+.crafting {
+  text-align: center;
+  position: relative;
+  margin-bottom: 130px;
+  &__blur {
+    padding: 60px 20px;
+    background: linear-gradient(180deg, rgba(31, 70, 169, 0.2) 0%, rgba(46, 92, 209, 0) 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    position: relative;
+    z-index: 2;
+  }
+  .title {
+    margin-bottom: 50px;
+  }
+  .text {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+  &__cometa {
+    width: 800px;
+    position: absolute;
+    top: -30px;
+    right: 140px;
+    z-index: 1;
+  }
+  @media (max-width: $break_sm) {
+    margin-bottom: 105px;
+    &__blur {
+      padding: 40px 30px;
+    }
+    .title {
+      margin-bottom: 25px;
+    }
+    .text {
+      margin-bottom: 55px;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 .tournaments {
   text-align: center;
   position: relative;
+  margin-bottom: 150px;
   .title {
     margin-bottom: 50px;
     position: relative;
@@ -99,6 +100,7 @@
     }
   }
   @media (max-width: $break_sm) {
+    margin-bottom: 80px;
     .text {
       margin-bottom: 62px;
     }

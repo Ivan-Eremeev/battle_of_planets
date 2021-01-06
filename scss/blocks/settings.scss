@@ -161,11 +161,14 @@ body {
 .text {
   font-size: 22px;
   text-align: center;
-  @media (max-width: $break_sm) {
-    font-size: 19px;
+  p {
+    margin-bottom: 20px;
   }
   span {
     color: #AEBEF9;
+  }
+  @media (max-width: $break_sm) {
+    font-size: 19px;
   }
 }
 @keyframes rotate {
