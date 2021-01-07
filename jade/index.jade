@@ -26,7 +26,7 @@ block content
 			section.welcome
 				.wrapper
 					.welcome__content
-						.title Battle of Planets
+						h1.title Battle of Planets
 						.welcome__text Карточная игра с NFT токенами, где в качестве валюты нативный токен PPT (Planetary Provision token)
 						.welcome__btn
 							a(href="#").btn
@@ -39,7 +39,7 @@ block content
 			// description
 			section.description
 				.wrapper
-					.title Тебе предстоит пережить планетарное уничтожение!
+					h2.title Тебе предстоит пережить планетарное уничтожение!
 					.description__desc Stage 1 - Игра без NFT<br>(status alfa)
 					.text Попробуй прямо сейчас!
 					a(href="#").btn
@@ -65,7 +65,7 @@ block content
 			// gameplay
 			section.gameplay
 				.wrapper
-					.title Gameplay
+					h2.title Gameplay
 					.text Цель игрока - уничтожить защиту планеты противника
 					.gameplay__row
 						.gameplay__items
@@ -96,7 +96,7 @@ block content
 			// methods
 			section.methods
 				.wrapper
-					.title 5 способов играя, зарабатывать
+					h2.title 5 способов играя, зарабатывать
 					.row
 						.methods__col
 							.methods__item
@@ -129,7 +129,7 @@ block content
 			// tournaments
 			section.tournaments
 				.wrapper
-					.title ТУРНИРЫ
+					h2.title ТУРНИРЫ
 					.text
 						span Участие в турнире может принести очень большой куш, представь - 
 						| обыграть 64 игроков и стать владельцем их планетарных ресурсов. 
@@ -147,7 +147,7 @@ block content
 			section.crafting
 				.wrapper
 					.crafting__blur
-						.title Крафтинг
+						h2.title Крафтинг
 						.text
 							p
 								span Для улучшения, покупки/продажи NFT карт будут нужны нативные токены платформы.
@@ -163,7 +163,7 @@ block content
 			// award
 			section.award
 				.wrapper
-					.title Получай лут за каждый бой
+					h2.title Получай лут за каждый бой
 					.row
 						.award__col
 							.award__head
@@ -187,7 +187,7 @@ block content
 			section.token
 				.wrapper
 					.token__head
-						.title Token distribution
+						h2.title Token distribution
 						.text Для реализации проекта необходимы средства и дополнительные человеческие ресурсы. Именно поэтому команда проекта запускает “Token distribution”, который пройдёт в несколько этапов
 					.token__container
 						.token__headTable
@@ -225,25 +225,25 @@ block content
 					.row
 						.cap__col.cap__col--1
 							.cap__item
-								.title Soft cap	
+								h2.title Soft cap	
 								.cap__row
 									.cap__text 250 000
 										span $
 									img(src="img/icon_7.svg", alt="").cap__icon
 						.cap__col.cap__col--2
 							.cap__item
-								.title Hard cap
+								h2.title Hard cap
 								.cap__row
 									img(src="img/icon_8.svg", alt="").cap__icon
 									.cap__text 5 000 000
 										span $
-				img(src="img/meteorite_4.png", alt="").cap__meteorite.js-parallaxMouse(data-direction="xy" data-intensity="2" data-speed="700" data-revers="true")
+				img(src="img/meteorite_4.png", alt="").cap__meteorite
 			//	/cap
 
 			// reservation
 			section.reservation
 				.wrapper
-					.title Резервирование токенов
+					h2.title Резервирование токенов
 					.reservation__diagram
 						img(src="img/diagram.svg", alt="").reservation__img
 						.reservation__section.reservation__section--1.js-parallaxMouse(data-direction="xy" data-intensity="0.2" data-speed="700")
@@ -273,6 +273,43 @@ block content
 								.reservation__text Едвайзерам
 				img(src="img/meteorite_5.png", alt="").reservation__meteorite
 			//	/reservation
+
+			// roadmap
+			.roadmap
+				.wrapper
+					h2.title Roadmap
+			//	/roadmap
+
+			// team
+			section.team
+				.wrapper
+					h2.title Команда
+					.row
+						.team__col
+							.team__img.team__img--1
+								img(src="img/photo_1.jpg", alt="")
+							.team__content
+								.team__name Алексей Кузнецов
+								.text Основатель Battle of Games
+						.team__col
+							.team__img.team__img--2
+								img(src="img/photo_2.jpg", alt="")
+							.team__content
+								.team__name Анна Волкова
+								.text Менеджер по привлечению
+						.team__col
+							.team__img.team__img--3
+								img(src="img/photo_3.jpg", alt="")
+							.team__content
+								.team__name Андрей Епифанцев
+								.text Front-end Разработчик
+						.team__col
+							.team__img.team__img--4
+								img(src="img/photo_4.jpg", alt="")
+							.team__content
+								.team__name Анатолий Волков
+								.text Менеджер по привлечению
+			// /team
 			
 		include blocks/footer.jade
 

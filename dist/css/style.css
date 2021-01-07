@@ -204,7 +204,10 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  background-image: url(../img/footer__bg.png);
+  background-position: bottom center;
+  background-repeat: no-repeat; }
 
 .content {
   -webkit-box-flex: 1;
@@ -1259,7 +1262,8 @@ body {
 
 .reservation {
   text-align: center;
-  position: relative; }
+  position: relative;
+  margin-bottom: 135px; }
   .reservation .title {
     margin-bottom: 130px; }
   .reservation__diagram {
@@ -1318,3 +1322,48 @@ body {
     top: 0;
     right: 140px;
     z-index: 1; }
+
+.team {
+  margin-bottom: 140px; }
+  .team .title {
+    margin-bottom: 95px; }
+  .team__col {
+    width: 25%;
+    text-align: center; }
+  .team__img {
+    margin-bottom: 45px; }
+    .team__img img {
+      width: 135px;
+      height: 135px;
+      border-radius: 100%;
+      -o-object-fit: cover;
+      object-fit: cover; }
+  .team__name {
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    opacity: 0.6; }
+  .team .text {
+    font-weight: bold; }
+
+.footer {
+  padding-bottom: 277px; }
+  .footer .wrapper {
+    max-width: 875px; }
+  .footer .title {
+    margin-bottom: 70px; }
+  .footer__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: -10px;
+    margin-right: -10px; }
+  .footer__icon {
+    margin: 0 10px; }

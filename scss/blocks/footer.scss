@@ -1,0 +1,19 @@
+.footer {
+  padding-bottom: 277px;
+  .wrapper {
+    max-width: 875px;
+  }
+  .title {
+    margin-bottom: 70px;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  &__icon {
+    margin: 0 10px;
+  }
+}

@@ -1,0 +1,44 @@
+.team {
+  margin-bottom: 140px;
+  .title {
+    margin-bottom: 95px;
+  }
+  &__col {
+    @include col(3);
+    text-align: center;
+  }
+  &__img {
+    margin-bottom: 45px;
+    img {
+      width: 135px;
+      height: 135px;
+      border-radius: 100%;
+      object-fit: cover;
+    }
+    &--1 {
+
+    }
+    &--2 {
+      
+    }
+    &--3 {
+      
+    }
+    &--4 {
+      
+    }
+  }
+  &__content {
+    
+  }
+  &__name {
+    max-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    opacity: 0.6;
+  }
+  .text {
+    font-weight: bold;
+  }
+}
