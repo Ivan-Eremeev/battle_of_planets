@@ -1166,6 +1166,9 @@ body {
     .token__head .text {
       text-align: left;
       padding-left: 20px; }
+  .token__container {
+    white-space: nowrap;
+    overflow-x: auto; }
   .token__headTable {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
@@ -1204,12 +1207,26 @@ body {
     right: 0;
     opacity: 0.5;
     z-index: 1; }
+  @media (max-width: 769px) {
+    .token__head {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-left: 0; }
+    .token .text {
+      padding-left: 0;
+      text-align: center; } }
 
 .cap {
   margin-bottom: 147px;
   position: relative; }
   .cap__col {
     width: 50%; }
+    @media screen and (max-width: 769px) {
+      .cap__col {
+        width: 100%; } }
     .cap__col--1 .cap__item {
       background: -webkit-gradient(linear, right top, left top, from(#000F24), to(rgba(0, 15, 36, 0)));
       background: -o-linear-gradient(right, #000F24 0%, rgba(0, 15, 36, 0) 100%);

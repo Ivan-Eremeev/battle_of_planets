@@ -3,6 +3,7 @@
   position: relative;
   &__col {
     @include col(6);
+    @include col-sm(12);
     &--1 {
       .cap__item {
         background: linear-gradient(270deg, #000F24 0%, rgba(0, 15, 36, 0) 100%);
@@ -59,5 +60,8 @@
     top: 45px;
     left: -207px;
     z-index: 1;
+  }
+  @media (max-width: $break_sm) {
+    
   }
 }

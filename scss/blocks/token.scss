@@ -15,7 +15,8 @@
     }
   }
   &__container {
-      
+    white-space: nowrap;
+    overflow-x: auto;
   }
   &__headTable {
     display: grid;
@@ -59,5 +60,16 @@
     right: 0;
     opacity: 0.5;
     z-index: 1;
+  }
+  @media (max-width: $break_sm) {
+    &__head {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: 0;
+    }
+    .text {
+      padding-left: 0;
+      text-align: center;
+    }
   }
 }
