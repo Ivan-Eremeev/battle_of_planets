@@ -1,5 +1,6 @@
 .roadmap {
   margin-bottom: 120px;
+  position: relative;
   .title {
     margin-bottom: 60px;
   }
@@ -82,6 +83,12 @@
         top: 50%;
         right: 0;
         transform: translate(0,-50%);
+        transition: 0.3s;
+      }
+      &.active {
+        &:after {
+          transform: rotate(180deg);
+        }
       }
     }
   }
@@ -124,5 +131,55 @@
     opacity: 1;
     max-height: 50px;
     cursor: pointer;
+  }
+  @media (max-width: $break_sm) {
+    margin-bottom: 82px;
+    .title {
+      margin-bottom: 50px;
+    }
+    &__scroll {
+      max-height: 520px;
+    }
+    &__col {
+      &--1 {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 90px;
+        align-items: flex-start;
+        text-align: left;
+        .roadmap__head {
+          justify-content: flex-start;
+        }
+        .roadmap__num {
+          padding-left: 0;
+          margin-left: 0;
+          padding-right: 10px;
+          margin-right: 10px;
+          border-left: none;
+          border-right: 3px solid #008DF2;
+        }
+      }
+    }
+    &__content {
+      order: 2;
+      span {
+        display: none;
+      }
+    }
+    &__item {
+      margin-bottom: 45px;
+    }
+    &__btn {
+      display: block;
+      margin-left: -20px;
+      margin-right: -20px;
+      padding: 23px;
+      font-size: 19px;
+    }
+    .scrollbar-inner > .scroll-element.scroll-y {
+      right: auto;
+      left: 30px;
+      transform: translate(0,0);
+    }
   }
 }

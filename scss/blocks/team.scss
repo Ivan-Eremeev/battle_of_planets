@@ -1,15 +1,18 @@
 .team {
   margin-bottom: 140px;
+  position: relative;
   .title {
     margin-bottom: 95px;
   }
   &__col {
     @include col(3);
-    @include col-sm(12);
+    @include col-sm(6);
+    @include col-xs(12);
     text-align: center;
   }
   &__img {
     margin-bottom: 45px;
+    flex-shrink: 0;
     img {
       width: 135px;
       height: 135px;
@@ -42,11 +45,22 @@
   .text {
     font-weight: bold;
   }
+  &__cometa {
+    width: 900px;
+    position: absolute;
+    top: -800px;
+    right: -250px;
+    z-index: 2;
+  }
   @media (max-width: $break_sm) {
+    margin-bottom: 56px;
+    .title {
+      margin-bottom: 68px;
+    }
     &__col {
       display: flex;
       align-items: center;
-      margin-bottom: 40px;
+      margin-bottom: 46px;
     }
     &__img {
       margin-bottom: 0;

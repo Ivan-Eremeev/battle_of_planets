@@ -246,36 +246,42 @@ block content
 					h2.title Резервирование токенов
 					.reservation__diagram
 						img(src="img/diagram.svg", alt="").reservation__img
-						.reservation__section.reservation__section--1.js-parallaxMouse(data-direction="xy" data-intensity="0.2" data-speed="700")
-							img(src="img/diagram_line_1.svg", alt="").reservation__line.reservation__line--1
-							.reservation__container
-								.reservation__title 3%
-								.reservation__text Маркетинг
-						.reservation__section.reservation__section--2.js-parallaxMouse(data-direction="xy" data-intensity="0.3" data-speed="700")
-							img(src="img/diagram_line_2.svg", alt="").reservation__line.reservation__line--2
-							.reservation__container
-								.reservation__title 10%
-								.reservation__text Космичесикй фонд
-						.reservation__section.reservation__section--3.js-parallaxMouse(data-direction="xy" data-intensity="0.7" data-speed="700")
-							img(src="img/diagram_line_3.svg", alt="").reservation__line.reservation__line--3
-							.reservation__container
-								.reservation__title 45%
-								.reservation__text Команде, POS майнинг, ingame распределение 
-						.reservation__section.reservation__section--4.js-parallaxMouse(data-direction="xy" data-intensity="0.5" data-speed="700")
-							img(src="img/diagram_line_4.svg", alt="").reservation__line.reservation__line--4
-							.reservation__container
-								.reservation__title 40%
-								.reservation__text Все sale-этапы
-						.reservation__section.reservation__section--5.js-parallaxMouse(data-direction="xy" data-intensity="0.7" data-speed="700")
-							img(src="img/diagram_line_5.svg", alt="").reservation__line.reservation__line--5
+						.reservation__section.reservation__section--1.js-parallaxMouse(data-direction="xy" data-intensity="0.7" data-speed="700")
+							img(src="img/diagram_line_5.svg", alt="").reservation__line.reservation__line--1
 							.reservation__container
 								.reservation__title 2%
+								.reservation__gradient.reservation__gradient--1
 								.reservation__text Едвайзерам
+						.reservation__section.reservation__section--2.js-parallaxMouse(data-direction="xy" data-intensity="0.2" data-speed="700")
+							img(src="img/diagram_line_1.svg", alt="").reservation__line.reservation__line--2
+							.reservation__container
+								.reservation__title 3%
+								.reservation__gradient.reservation__gradient--2
+								.reservation__text Маркетинг
+						.reservation__section.reservation__section--3.js-parallaxMouse(data-direction="xy" data-intensity="0.3" data-speed="700")
+							img(src="img/diagram_line_2.svg", alt="").reservation__line.reservation__line--3
+							.reservation__container
+								.reservation__title 10%
+								.reservation__gradient.reservation__gradient--3
+								.reservation__text Космичесикй фонд
+						.reservation__section.reservation__section--4.js-parallaxMouse(data-direction="xy" data-intensity="0.7" data-speed="700")
+							img(src="img/diagram_line_3.svg", alt="").reservation__line.reservation__line--4
+							.reservation__container
+								.reservation__title 45%
+								.reservation__gradient.reservation__gradient--4
+								.reservation__text Команде, POS майнинг, ingame распределение 
+						.reservation__section.reservation__section--5.js-parallaxMouse(data-direction="xy" data-intensity="0.5" data-speed="700")
+							img(src="img/diagram_line_4.svg", alt="").reservation__line.reservation__line--5
+							.reservation__container
+								.reservation__title 40%
+								.reservation__gradient.reservation__gradient--5
+								.reservation__text Все sale-этапы
 				img(src="img/meteorite_5.png", alt="").reservation__meteorite
+				img(src="img/planet_4.png", alt="").reservation__planet
 			//	/reservation
 
 			// roadmap
-			.roadmap
+			section.roadmap
 				.wrapper
 					h2.title Roadmap
 					#scrollbar.roadmap__scroll.scrollbar-inner
@@ -291,6 +297,22 @@ block content
 									.roadmap__body
 										.roadmap__trigger
 											span Разработка whitepaper
+										.roadmap__drop
+											p Привлечение эдвайзеров
+											p Выпуск токена стандарта ERC-20
+											p Проведение Pre-ICO
+											p Старт Token distribution (Private-sale)
+											p Начало проведения Public-sale
+
+								.roadmap__item.mobile-visible
+									.roadmap__head
+										.roadmap__num 2
+										.roadmap__content
+											span старт
+											| Февраль 2021
+									.roadmap__body
+										.roadmap__trigger
+											span Запуск онлайн-версии Stage 1
 										.roadmap__drop
 											p Привлечение эдвайзеров
 											p Выпуск токена стандарта ERC-20
@@ -314,6 +336,22 @@ block content
 											p Старт Token distribution (Private-sale)
 											p Начало проведения Public-sale
 
+								.roadmap__item.mobile-visible
+									.roadmap__head
+										.roadmap__num 4
+										.roadmap__content
+											span старт
+											| Февраль 2021
+									.roadmap__body
+										.roadmap__trigger
+											span Разработка приложения на Android
+										.roadmap__drop
+											p Привлечение эдвайзеров
+											p Выпуск токена стандарта ERC-20
+											p Проведение Pre-ICO
+											p Старт Token distribution (Private-sale)
+											p Начало проведения Public-sale
+
 								.roadmap__item
 									.roadmap__head
 										.roadmap__content
@@ -330,7 +368,7 @@ block content
 											p Старт Token distribution (Private-sale)
 											p Начало проведения Public-sale
 
-							.roadmap__col.roadmap__col--2
+							.roadmap__col.roadmap__col--2.mobile-hide
 
 								.roadmap__item
 									.roadmap__head
@@ -398,6 +436,7 @@ block content
 							.team__content
 								.team__name Анатолий Волков
 								.text Менеджер по привлечению
+				img(src="img/cometa_3.png", alt="").team__cometa
 			// /team
 			
 		include blocks/footer.jade

@@ -54,7 +54,7 @@
     }
   }
   &__planet {
-    max-width: 1900px;
+    max-width: 100%;
     position: absolute;
     top: -150px;
     right: 0;
@@ -62,14 +62,31 @@
     z-index: 1;
   }
   @media (max-width: $break_sm) {
+    margin-bottom: 32px;
     &__head {
       flex-wrap: wrap;
       justify-content: center;
       margin-left: 0;
     }
+    &__head {
+      .title {
+        margin-bottom: 25px;
+      }
+    }
     .text {
       padding-left: 0;
       text-align: center;
+      line-height: 1.2;
+    }
+    &__headTable {
+      font-size: 19px;
+      opacity: 1;
+    }
+    &__planet {
+      max-width: 160%;
+      top: -90px;
+      right: -150px;
+      opacity: 0.8;
     }
   }
 }

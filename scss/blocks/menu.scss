@@ -52,6 +52,7 @@
     align-items: center;
 		&__nav {
 			width: 100%;
+			max-width: none;
 			padding-top: 100px;
 			padding-right: 40px;
 			background-color: #000F24;
@@ -61,7 +62,7 @@
 			right: -800px;
 			overflow-y: auto;
 			transition: 0.5s;
-			z-index: 10;
+			z-index: 15;
 		}
 		&__list {
 			display: block;
@@ -76,7 +77,7 @@
 		&__btn {
 			display: block;
 			position: relative;
-			z-index: 11;
+			z-index: 16;
 		}
 		&.open {
 			.menu__nav {

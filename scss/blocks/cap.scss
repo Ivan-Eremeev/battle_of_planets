@@ -63,6 +63,7 @@
     z-index: 1;
   }
   @media (max-width: $break_sm) {
+    margin-bottom: 50px;
     &__col {
       margin-bottom: 40px;
       &--1 {
@@ -82,13 +83,13 @@
       top: -20px;
     }
     &__item {
-      padding: 20px;
+      padding: 30px 20px 20px 20px;
     }
     &__text {
       font-size: 30px;
     }
     &__icon {
-      width: 43px;
+      width: 70px;
     }
   }
 }

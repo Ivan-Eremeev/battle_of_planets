@@ -19,10 +19,13 @@
     flex-shrink: 0;
   }
   @media (max-width: $break_sm) {
+    padding-bottom: 145px;
+    .title {
+      margin-bottom: 40px;
+    }
     &__icon {
       width: 50%;
-      margin-left: 0;
-      margin-right: 0;
+      margin: 24px 0;
       text-align: center;
       img {
         max-height: 20px;

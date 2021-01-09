@@ -367,6 +367,7 @@ $(document).ready(function () {
 				drop.hide();
 				trigger.on('click', function () {
 					drop.stop().slideToggle();
+					trigger.toggleClass('active');
 				})
 			})
 		}

@@ -15,27 +15,27 @@
   &__section {
     position: absolute;
     &--1 {
+      top: 90px;
+      left: -196px;
+      text-align: right;
+    }
+    &--2 {
       top: -31px;
       left: -114px; 
       text-align: right;
     }
-    &--2 {
+    &--3 {
       top: -30px;
       right: -150px;
       text-align: left;
     }
-    &--3 {
+    &--4 {
       bottom: 50px;
       right: -294px;
       text-align: left;
     }
-    &--4 {
-      bottom: 38px;
-      left: -196px;
-      text-align: right;
-    }
     &--5 {
-      top: 90px;
+      bottom: 38px;
       left: -196px;
       text-align: right;
     }
@@ -47,19 +47,19 @@
       left: 100%;
     }
     &--2 {
+      top: 35px;
+      left: 100%;
+    }
+    &--3 {
       top: 25px;
       right: 100%;
     }
-    &--3 {
+    &--4 {
       top: -35px;
       right: 100%;
     }
-    &--4 {
-      top: -70px;
-      left: 100%;
-    }
     &--5 {
-      top: 35px;
+      top: -70px;
       left: 100%;
     }
   }
@@ -80,5 +80,81 @@
     top: 0;
     right: 140px;
     z-index: 1;
+  }
+  &__gradient {
+    display: none;
+  }
+  &__planet {
+    width: 900px;
+    position: absolute;
+    top: 450px;
+    left: -450px;
+    z-index: 2;
+  }
+  @media (max-width: $break_md) {
+    margin-bottom: 52px;
+    .title {
+      margin-bottom: 40px;
+    }
+    &__diagram {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__section {
+      position: static;
+      margin-bottom: 30px;
+      &--1 {
+        width: 33.33%;
+        text-align: left;
+      }
+      &--2 {
+        width: 33.33%;
+        text-align: left;
+      }
+      &--3 {
+        width: 33.33%;
+      }
+      &--4 {
+        width: 50%;
+      }
+      &--5 {
+        width: 50%;
+        text-align: left;
+      }
+    }
+    &__img {
+      display: none;
+    }
+    &__title {
+      font-size: 30px;
+    }
+    &__text {
+      font-size: 19px;
+    }
+    &__line {
+      display: none;
+    }
+    &__gradient {
+      display: block;
+      height: 9px;
+      background: linear-gradient(to right, #DE1F56 0%, #0075FF 100%);
+      margin-bottom: 10px;
+      &--1 {
+        width: 20%;
+      }
+      &--2 {
+        width: 30%;
+      }
+      &--3 {
+        width: 50%;
+      }
+      &--4 {
+        width: 90%;
+      }
+      &--5 {
+        width: 80%;
+      }
+    }
   }
 }

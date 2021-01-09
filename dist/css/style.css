@@ -423,6 +423,8 @@ body {
   margin-bottom: 20px;
   text-align: center;
   position: relative; }
+  .header .wrapper {
+    z-index: 16; }
   @media (max-width: 769px) {
     .header {
       padding: 12px 0;
@@ -435,7 +437,7 @@ body {
   @media (max-width: 769px) {
     .logo {
       margin-bottom: 0;
-      z-index: 11; } }
+      z-index: 16; } }
 
 /* menu */
 .menu {
@@ -500,6 +502,7 @@ body {
       align-items: center; }
       .menu__nav {
         width: 100%;
+        max-width: none;
         padding-top: 100px;
         padding-right: 40px;
         background-color: #000F24;
@@ -511,7 +514,7 @@ body {
         -webkit-transition: 0.5s;
         -o-transition: 0.5s;
         transition: 0.5s;
-        z-index: 10; }
+        z-index: 15; }
       .menu__list {
         display: block;
         text-align: right; }
@@ -520,7 +523,7 @@ body {
       .menu__btn {
         display: block;
         position: relative;
-        z-index: 11; }
+        z-index: 16; }
       .menu.open .menu__nav {
         right: 0; } }
 
@@ -608,9 +611,7 @@ body {
         margin-bottom: 18px; }
       .welcome__text {
         max-width: 200px;
-        font-size: 19px; }
-      .welcome__btn {
-        text-align: center; } }
+        font-size: 19px; } }
 
 /* description */
 .description {
@@ -1126,7 +1127,8 @@ body {
     z-index: 1; }
   @media (max-width: 769px) {
     .award {
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 50px; }
       .award__col {
         margin-bottom: 50px; }
       .award__head {
@@ -1205,23 +1207,36 @@ body {
     text-align: left;
     padding-left: 20px; }
   .token__planet {
-    max-width: 1900px;
+    max-width: 100%;
     position: absolute;
     top: -150px;
     right: 0;
     opacity: 0.5;
     z-index: 1; }
   @media (max-width: 769px) {
-    .token__head {
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      margin-left: 0; }
-    .token .text {
-      padding-left: 0;
-      text-align: center; } }
+    .token {
+      margin-bottom: 32px; }
+      .token__head {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-left: 0; }
+      .token__head .title {
+        margin-bottom: 25px; }
+      .token .text {
+        padding-left: 0;
+        text-align: center;
+        line-height: 1.2; }
+      .token__headTable {
+        font-size: 19px;
+        opacity: 1; }
+      .token__planet {
+        max-width: 160%;
+        top: -90px;
+        right: -150px;
+        opacity: 0.8; } }
 
 .cap {
   margin-bottom: 147px;
@@ -1282,26 +1297,28 @@ body {
     left: -207px;
     z-index: 1; }
   @media (max-width: 769px) {
-    .cap__col {
-      margin-bottom: 40px; }
-      .cap__col--1 .title {
-        right: 50%;
-        -webkit-transform: translate(50%, 0);
-        -ms-transform: translate(50%, 0);
-        transform: translate(50%, 0); }
-      .cap__col--2 .title {
-        left: 50%;
-        -webkit-transform: translate(-50%, 0);
-        -ms-transform: translate(-50%, 0);
-        transform: translate(-50%, 0); }
-    .cap .title {
-      top: -20px; }
-    .cap__item {
-      padding: 20px; }
-    .cap__text {
-      font-size: 30px; }
-    .cap__icon {
-      width: 43px; } }
+    .cap {
+      margin-bottom: 50px; }
+      .cap__col {
+        margin-bottom: 40px; }
+        .cap__col--1 .title {
+          right: 50%;
+          -webkit-transform: translate(50%, 0);
+          -ms-transform: translate(50%, 0);
+          transform: translate(50%, 0); }
+        .cap__col--2 .title {
+          left: 50%;
+          -webkit-transform: translate(-50%, 0);
+          -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0); }
+      .cap .title {
+        top: -20px; }
+      .cap__item {
+        padding: 30px 20px 20px 20px; }
+      .cap__text {
+        font-size: 30px; }
+      .cap__icon {
+        width: 70px; } }
 
 .reservation {
   text-align: center;
@@ -1315,23 +1332,23 @@ body {
   .reservation__section {
     position: absolute; }
     .reservation__section--1 {
+      top: 90px;
+      left: -196px;
+      text-align: right; }
+    .reservation__section--2 {
       top: -31px;
       left: -114px;
       text-align: right; }
-    .reservation__section--2 {
+    .reservation__section--3 {
       top: -30px;
       right: -150px;
       text-align: left; }
-    .reservation__section--3 {
+    .reservation__section--4 {
       bottom: 50px;
       right: -294px;
       text-align: left; }
-    .reservation__section--4 {
-      bottom: 38px;
-      left: -196px;
-      text-align: right; }
     .reservation__section--5 {
-      top: 90px;
+      bottom: 38px;
       left: -196px;
       text-align: right; }
   .reservation__line {
@@ -1340,16 +1357,16 @@ body {
       top: 35px;
       left: 100%; }
     .reservation__line--2 {
+      top: 35px;
+      left: 100%; }
+    .reservation__line--3 {
       top: 25px;
       right: 100%; }
-    .reservation__line--3 {
+    .reservation__line--4 {
       top: -35px;
       right: 100%; }
-    .reservation__line--4 {
-      top: -70px;
-      left: 100%; }
     .reservation__line--5 {
-      top: 35px;
+      top: -70px;
       left: 100%; }
   .reservation__container {
     max-width: 300px; }
@@ -1365,9 +1382,71 @@ body {
     top: 0;
     right: 140px;
     z-index: 1; }
+  .reservation__gradient {
+    display: none; }
+  .reservation__planet {
+    width: 900px;
+    position: absolute;
+    top: 450px;
+    left: -450px;
+    z-index: 2; }
+  @media (max-width: 1050px) {
+    .reservation {
+      margin-bottom: 52px; }
+      .reservation .title {
+        margin-bottom: 40px; }
+      .reservation__diagram {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+      .reservation__section {
+        position: static;
+        margin-bottom: 30px; }
+        .reservation__section--1 {
+          width: 33.33%;
+          text-align: left; }
+        .reservation__section--2 {
+          width: 33.33%;
+          text-align: left; }
+        .reservation__section--3 {
+          width: 33.33%; }
+        .reservation__section--4 {
+          width: 50%; }
+        .reservation__section--5 {
+          width: 50%;
+          text-align: left; }
+      .reservation__img {
+        display: none; }
+      .reservation__title {
+        font-size: 30px; }
+      .reservation__text {
+        font-size: 19px; }
+      .reservation__line {
+        display: none; }
+      .reservation__gradient {
+        display: block;
+        height: 9px;
+        background: -webkit-gradient(linear, left top, right top, from(#DE1F56), to(#0075FF));
+        background: -o-linear-gradient(left, #DE1F56 0%, #0075FF 100%);
+        background: linear-gradient(to right, #DE1F56 0%, #0075FF 100%);
+        margin-bottom: 10px; }
+        .reservation__gradient--1 {
+          width: 20%; }
+        .reservation__gradient--2 {
+          width: 30%; }
+        .reservation__gradient--3 {
+          width: 50%; }
+        .reservation__gradient--4 {
+          width: 90%; }
+        .reservation__gradient--5 {
+          width: 80%; } }
 
 .team {
-  margin-bottom: 140px; }
+  margin-bottom: 140px;
+  position: relative; }
   .team .title {
     margin-bottom: 95px; }
   .team__col {
@@ -1375,9 +1454,14 @@ body {
     text-align: center; }
     @media screen and (max-width: 769px) {
       .team__col {
+        width: 50%; } }
+    @media screen and (max-width: 500px) {
+      .team__col {
         width: 100%; } }
   .team__img {
-    margin-bottom: 45px; }
+    margin-bottom: 45px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0; }
     .team__img img {
       width: 135px;
       height: 135px;
@@ -1394,28 +1478,38 @@ body {
     opacity: 0.8; }
   .team .text {
     font-weight: bold; }
+  .team__cometa {
+    width: 900px;
+    position: absolute;
+    top: -800px;
+    right: -250px;
+    z-index: 2; }
   @media (max-width: 769px) {
-    .team__col {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      margin-bottom: 40px; }
-    .team__img {
-      margin-bottom: 0; }
-      .team__img img {
-        width: 56px;
-        height: 56px; }
-    .team__content {
-      text-align: left; }
-    .team__name {
-      max-width: none;
-      margin-bottom: 10px;
-      font-size: 16px; }
-    .team .text {
-      text-align: left; } }
+    .team {
+      margin-bottom: 56px; }
+      .team .title {
+        margin-bottom: 68px; }
+      .team__col {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 46px; }
+      .team__img {
+        margin-bottom: 0; }
+        .team__img img {
+          width: 56px;
+          height: 56px; }
+      .team__content {
+        text-align: left; }
+      .team__name {
+        max-width: none;
+        margin-bottom: 10px;
+        font-size: 16px; }
+      .team .text {
+        text-align: left; } }
 
 .footer {
   padding-bottom: 257px; }
@@ -1442,20 +1536,24 @@ body {
     -ms-flex-negative: 0;
     flex-shrink: 0; }
   @media (max-width: 769px) {
-    .footer__icon {
-      width: 50%;
-      margin-left: 0;
-      margin-right: 0;
-      text-align: center; }
-      .footer__icon img {
-        max-height: 20px; }
-      .footer__icon:nth-child(3) {
-        -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-        order: 4; } }
+    .footer {
+      padding-bottom: 145px; }
+      .footer .title {
+        margin-bottom: 40px; }
+      .footer__icon {
+        width: 50%;
+        margin: 24px 0;
+        text-align: center; }
+        .footer__icon img {
+          max-height: 20px; }
+        .footer__icon:nth-child(3) {
+          -webkit-box-ordinal-group: 5;
+          -ms-flex-order: 4;
+          order: 4; } }
 
 .roadmap {
-  margin-bottom: 120px; }
+  margin-bottom: 120px;
+  position: relative; }
   .roadmap .title {
     margin-bottom: 60px; }
   .roadmap__scroll {
@@ -1539,7 +1637,14 @@ body {
       right: 0;
       -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%); }
+      transform: translate(0, -50%);
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+    .roadmap__trigger span.active:after {
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg); }
   .roadmap__drop {
     padding-top: 20px;
     font-size: 14px;
@@ -1580,3 +1685,49 @@ body {
     opacity: 1;
     max-height: 50px;
     cursor: pointer; }
+  @media (max-width: 769px) {
+    .roadmap {
+      margin-bottom: 82px; }
+      .roadmap .title {
+        margin-bottom: 50px; }
+      .roadmap__scroll {
+        max-height: 520px; }
+      .roadmap__col--1 {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 90px;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        text-align: left; }
+        .roadmap__col--1 .roadmap__head {
+          -webkit-box-pack: start;
+          -ms-flex-pack: start;
+          justify-content: flex-start; }
+        .roadmap__col--1 .roadmap__num {
+          padding-left: 0;
+          margin-left: 0;
+          padding-right: 10px;
+          margin-right: 10px;
+          border-left: none;
+          border-right: 3px solid #008DF2; }
+      .roadmap__content {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2; }
+        .roadmap__content span {
+          display: none; }
+      .roadmap__item {
+        margin-bottom: 45px; }
+      .roadmap__btn {
+        display: block;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding: 23px;
+        font-size: 19px; }
+      .roadmap .scrollbar-inner > .scroll-element.scroll-y {
+        right: auto;
+        left: 30px;
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0); } }
