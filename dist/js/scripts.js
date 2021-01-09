@@ -65,6 +65,14 @@ $(document).ready(function () {
 	};
 	myMenu($('#menu'));
 
+	// JQueryScrollbar
+	function scrollbar(block) {
+		if (block.length) {
+			block.scrollbar();
+		}
+	}
+	scrollbar($('#scrollbar'));
+
 	// // Блок с высотой окна браузера
 	// function screenHeight(fullHeight) {
 	// 	fullHeight.css({
@@ -349,6 +357,22 @@ $(document).ready(function () {
 	};
 	videoControll($('.js-video'));
 
+	// Выпадайки в roadmap
+	function Drop(block) {
+		if (block.length) {
+			block.each(function () {
+				var $this = $(this),
+						trigger = $this.find('.roadmap__trigger span'),
+						drop = $this.find('.roadmap__drop');
+				drop.hide();
+				trigger.on('click', function () {
+					drop.stop().slideToggle();
+				})
+			})
+		}
+	}
+	Drop($('.roadmap__body'));
+
 	// // 3d эффект вращения элемента при наведении
 	// function rotate(element) {
 	// 	var card = element,
@@ -523,7 +547,7 @@ $(document).ready(function () {
 	// 	}, 'xml');
 	// });
 
-	// // Присваивание класса при клике
+	// Присваивание класса при клике
 	// function clickToggle(block) {
 	// 	if (block.length) {
 	// 		block.on('click', function () {

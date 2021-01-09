@@ -748,9 +748,12 @@ body {
   .gameplay__video {
     width: 50%;
     position: relative;
-    cursor: pointer; }
+    cursor: pointer;
+    overflow: hidden; }
     .gameplay__video > img {
       display: block;
+      width: 100%;
+      height: 100%;
       position: absolute;
       top: 0;
       bottom: 0;
@@ -1450,3 +1453,130 @@ body {
         -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
         order: 4; } }
+
+.roadmap {
+  margin-bottom: 120px; }
+  .roadmap .title {
+    margin-bottom: 60px; }
+  .roadmap__scroll {
+    max-height: 600px; }
+  .roadmap__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .roadmap__col {
+    width: 50%; }
+    .roadmap__col--1 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      padding-right: 70px;
+      text-align: right; }
+      .roadmap__col--1 .roadmap__head {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end; }
+      .roadmap__col--1 .roadmap__num {
+        padding-left: 20px;
+        border-left: 3px solid #008DF2;
+        margin-left: 20px; }
+    .roadmap__col--2 {
+      padding-top: 80px;
+      padding-left: 70px; }
+      .roadmap__col--2 .roadmap__num {
+        padding-right: 20px;
+        border-right: 3px solid #008DF2;
+        margin-right: 20px; }
+  .roadmap__item {
+    margin-bottom: 100px; }
+  .roadmap__head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    margin-bottom: 30px; }
+  .roadmap__content {
+    font-size: 22px;
+    color: #AEBEF9; }
+    .roadmap__content span {
+      display: block;
+      opacity: 0.4;
+      font-size: 17px; }
+  .roadmap__num {
+    margin-bottom: -10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #008DF2; }
+  .roadmap__trigger span {
+    max-width: 235px;
+    display: inline-block;
+    padding-right: 30px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative; }
+    .roadmap__trigger span:after {
+      content: '';
+      display: block;
+      width: 14px;
+      height: 7px;
+      background-image: url("data:image/svg+xml,%3Csvg width='14' height='7' viewBox='0 0 14 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0.5L7 6.5L13 0.5' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%); }
+  .roadmap__drop {
+    padding-top: 20px;
+    font-size: 14px;
+    color: #AEBEF9;
+    overflow: hidden; }
+    .roadmap__drop p {
+      margin-bottom: 10px; }
+  .roadmap__center {
+    text-align: center; }
+  .roadmap__btn {
+    display: inline-block;
+    padding: 30px 50px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(186, 0, 45, 0.54)), to(rgba(0, 102, 255, 0)));
+    background: -o-linear-gradient(top, rgba(186, 0, 45, 0.54) 0%, rgba(0, 102, 255, 0) 100%);
+    background: linear-gradient(180deg, rgba(186, 0, 45, 0.54) 0%, rgba(0, 102, 255, 0) 100%);
+    font-size: 22px; }
+    .roadmap__btn span {
+      display: block;
+      color: #AEBEF9;
+      margin-top: 15px; }
+  .roadmap .scrollbar-inner > .scroll-element.scroll-y {
+    right: 50%;
+    -webkit-transform: translate(2px, 0);
+    -ms-transform: translate(2px, 0);
+    transform: translate(2px, 0); }
+  .roadmap .scrollbar-inner > .scroll-element.scroll-y {
+    width: 4px;
+    -webkit-box-shadow: 0px 0px 10px rgba(2, 194, 255, 0.5);
+    box-shadow: 0px 0px 10px rgba(2, 194, 255, 0.5); }
+  .roadmap .scrollbar-inner > .scroll-element .scroll-element_track {
+    background: -webkit-gradient(linear, left top, left bottom, from(#0277ff), color-stop(30%, #5ac4ff), color-stop(70%, #70c1ff), to(#0085ff));
+    background: -o-linear-gradient(top, #0277ff, #5ac4ff 30%, #70c1ff 70%, #0085ff);
+    background: linear-gradient(to bottom, #0277ff, #5ac4ff 30%, #70c1ff 70%, #0085ff); }
+  .roadmap .scrollbar-inner > .scroll-element .scroll-bar {
+    background: -webkit-gradient(linear, left top, left bottom, from(#0677c1), color-stop(#0de2ff), to(#0677c1));
+    background: -o-linear-gradient(top, #0677c1, #0de2ff, #0677c1);
+    background: linear-gradient(to bottom, #0677c1, #0de2ff, #0677c1);
+    opacity: 1;
+    max-height: 50px;
+    cursor: pointer; }
