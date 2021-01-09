@@ -46,6 +46,7 @@
     font-size: 40px;
     font-weight: bold;
     color: #AEBEF9;
+    white-space: nowrap;
     span {
       color: #455c6f;
       margin-left: 20px;
@@ -62,6 +63,32 @@
     z-index: 1;
   }
   @media (max-width: $break_sm) {
-    
+    &__col {
+      margin-bottom: 40px;
+      &--1 {
+        .title {
+          right: 50%;
+          transform: translate(+50%,0);
+        }
+      }
+      &--2 {
+        .title {
+          left: 50%;
+          transform: translate(-50%,0);
+        }
+      }
+    }
+    .title {
+      top: -20px;
+    }
+    &__item {
+      padding: 20px;
+    }
+    &__text {
+      font-size: 30px;
+    }
+    &__icon {
+      width: 43px;
+    }
   }
 }

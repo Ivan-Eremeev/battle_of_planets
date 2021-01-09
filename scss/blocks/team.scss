@@ -5,6 +5,7 @@
   }
   &__col {
     @include col(3);
+    @include col-sm(12);
     text-align: center;
   }
   &__img {
@@ -29,16 +30,41 @@
     }
   }
   &__content {
-    
+    padding-left: 25px;
   }
   &__name {
     max-width: 100px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    opacity: 0.6;
+    opacity: 0.8;
   }
   .text {
     font-weight: bold;
+  }
+  @media (max-width: $break_sm) {
+    &__col {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    &__img {
+      margin-bottom: 0;
+      img {
+        width: 56px;
+        height: 56px;
+      }
+    }
+    &__content {
+      text-align: left;
+    }
+    &__name {
+      max-width: none;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    .text {
+      text-align: left;
+    }
   }
 }

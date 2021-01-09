@@ -1,5 +1,5 @@
 .footer {
-  padding-bottom: 277px;
+  padding-bottom: 257px;
   .wrapper {
     max-width: 875px;
   }
@@ -8,12 +8,28 @@
   }
   &__row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-left: -10px;
     margin-right: -10px;
   }
   &__icon {
-    margin: 0 10px;
+    margin: 10px;
+    flex-shrink: 0;
+  }
+  @media (max-width: $break_sm) {
+    &__icon {
+      width: 50%;
+      margin-left: 0;
+      margin-right: 0;
+      text-align: center;
+      img {
+        max-height: 20px;
+      }
+      &:nth-child(3) {
+        order: 4;
+      }
+    }
   }
 }

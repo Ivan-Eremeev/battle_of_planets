@@ -206,6 +206,7 @@ body {
   min-height: 100%;
   overflow: hidden;
   background-image: url(../img/footer__bg.png);
+  background-size: contain;
   background-position: bottom center;
   background-repeat: no-repeat; }
 
@@ -543,12 +544,12 @@ body {
     width: 340px;
     height: 340px;
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 0;
     z-index: 2; }
     .welcome__planet img {
-      width: 65%;
-      height: 65%;
+      width: 83%;
+      height: 83%;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -577,8 +578,8 @@ body {
     .welcome__planet:before {
       content: '';
       display: block;
-      width: 100%;
-      height: 100%;
+      width: 80%;
+      height: 80%;
       background-image: url(../img/glow_1.png);
       background-size: 120%;
       background-position: center;
@@ -1266,7 +1267,8 @@ body {
   .cap__text {
     font-size: 40px;
     font-weight: bold;
-    color: #AEBEF9; }
+    color: #AEBEF9;
+    white-space: nowrap; }
     .cap__text span {
       color: #455c6f;
       margin-left: 20px; }
@@ -1276,6 +1278,27 @@ body {
     top: 45px;
     left: -207px;
     z-index: 1; }
+  @media (max-width: 769px) {
+    .cap__col {
+      margin-bottom: 40px; }
+      .cap__col--1 .title {
+        right: 50%;
+        -webkit-transform: translate(50%, 0);
+        -ms-transform: translate(50%, 0);
+        transform: translate(50%, 0); }
+      .cap__col--2 .title {
+        left: 50%;
+        -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        transform: translate(-50%, 0); }
+    .cap .title {
+      top: -20px; }
+    .cap__item {
+      padding: 20px; }
+    .cap__text {
+      font-size: 30px; }
+    .cap__icon {
+      width: 43px; } }
 
 .reservation {
   text-align: center;
@@ -1347,6 +1370,9 @@ body {
   .team__col {
     width: 25%;
     text-align: center; }
+    @media screen and (max-width: 769px) {
+      .team__col {
+        width: 100%; } }
   .team__img {
     margin-bottom: 45px; }
     .team__img img {
@@ -1355,17 +1381,41 @@ body {
       border-radius: 100%;
       -o-object-fit: cover;
       object-fit: cover; }
+  .team__content {
+    padding-left: 25px; }
   .team__name {
     max-width: 100px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    opacity: 0.6; }
+    opacity: 0.8; }
   .team .text {
     font-weight: bold; }
+  @media (max-width: 769px) {
+    .team__col {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-bottom: 40px; }
+    .team__img {
+      margin-bottom: 0; }
+      .team__img img {
+        width: 56px;
+        height: 56px; }
+    .team__content {
+      text-align: left; }
+    .team__name {
+      max-width: none;
+      margin-bottom: 10px;
+      font-size: 16px; }
+    .team .text {
+      text-align: left; } }
 
 .footer {
-  padding-bottom: 277px; }
+  padding-bottom: 257px; }
   .footer .wrapper {
     max-width: 875px; }
   .footer .title {
@@ -1374,6 +1424,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -1383,4 +1435,18 @@ body {
     margin-left: -10px;
     margin-right: -10px; }
   .footer__icon {
-    margin: 0 10px; }
+    margin: 10px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0; }
+  @media (max-width: 769px) {
+    .footer__icon {
+      width: 50%;
+      margin-left: 0;
+      margin-right: 0;
+      text-align: center; }
+      .footer__icon img {
+        max-height: 20px; }
+      .footer__icon:nth-child(3) {
+        -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+        order: 4; } }
