@@ -1461,13 +1461,41 @@ body {
   .team__img {
     margin-bottom: 45px;
     -ms-flex-negative: 0;
-    flex-shrink: 0; }
+    flex-shrink: 0;
+    position: relative; }
     .team__img img {
       width: 135px;
       height: 135px;
       border-radius: 100%;
       -o-object-fit: cover;
-      object-fit: cover; }
+      object-fit: cover;
+      position: relative;
+      z-index: 3; }
+    .team__img:before {
+      content: '';
+      display: block;
+      width: 160%;
+      height: 160%;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-animation: rotate 36s linear infinite;
+      animation: rotate 36s linear infinite;
+      z-index: 2; }
+    .team__img--1:before {
+      background-image: url(../img/team_glow_1.png); }
+    .team__img--2:before {
+      background-image: url(../img/team_glow_2.png); }
+    .team__img--3:before {
+      background-image: url(../img/team_glow_3.png); }
+    .team__img--4:before {
+      background-image: url(../img/team_glow_4.png); }
   .team__content {
     padding-left: 25px; }
   .team__name {
@@ -1484,6 +1512,23 @@ body {
     top: -800px;
     right: -250px;
     z-index: 2; }
+  .team__meteorite_1 {
+    width: 550px;
+    position: absolute;
+    top: -230px;
+    left: -100px;
+    z-index: 2; }
+  .team__meteorite_2 {
+    width: 580px;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    z-index: 2; }
+  @media (max-width: 1400px) {
+    .team__meteorite_1 {
+      left: -300px; }
+    .team__meteorite_2 {
+      right: -300px; } }
   @media (max-width: 769px) {
     .team {
       margin-bottom: 56px; }
@@ -1509,10 +1554,16 @@ body {
         margin-bottom: 10px;
         font-size: 16px; }
       .team .text {
-        text-align: left; } }
+        text-align: left; }
+      .team__meteorite_1 {
+        left: -200px; }
+      .team__meteorite_2 {
+        display: none; } }
 
 .footer {
-  padding-bottom: 257px; }
+  padding-bottom: 257px;
+  position: relative;
+  z-index: 4; }
   .footer .wrapper {
     max-width: 875px; }
   .footer .title {
