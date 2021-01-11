@@ -16,8 +16,8 @@
     z-index: 2;
   }
   &__planet {
-    width: 620px;
-    height: 620px;
+    width: 550px;
+    height: 550px;
     position: absolute;
     z-index: 1;
     img {
@@ -42,7 +42,7 @@
       left: 50%;
       transform: translate(-50%,-50%);
       z-index: 2;
-      animation: rotate 36s linear infinite;
+      animation: rotate 27s linear infinite;
     }
     &:before {
       content: '';
@@ -58,10 +58,10 @@
       left: 50%;
       transform: translate(-50%,-50%);
       z-index: 1;
-      animation: rotate 36s linear infinite;
+      animation: rotate 27s linear infinite;
     }
     &--1 {
-      top: -150px;
+      top: -110px;
       left: -30px;
       &:after {
         background-image: url(../img/track_2.png);
@@ -71,7 +71,7 @@
       }
     }
     &--2 {
-      top: -180px;
+      top: -130px;
       right: -30px;
       &:after {
         background-image: url(../img/track_3.png);

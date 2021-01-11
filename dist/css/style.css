@@ -101,6 +101,7 @@ input,
 textarea {
   font-family: "AnonymousPro", sans-serif;
   font-size: 17px;
+  line-height: 1.2;
   color: #fff; }
 
 body {
@@ -109,6 +110,7 @@ body {
   background-color: #05082a;
   font-family: "AnonymousPro", sans-serif;
   font-size: 17px;
+  line-height: 1.2;
   color: #fff; }
 
 @media (max-width: 769px) {
@@ -580,7 +582,6 @@ body {
     max-width: 430px;
     font-size: 22px; }
   .welcome__text {
-    line-height: 22px;
     margin-bottom: 50px; }
   .welcome__planet {
     width: 340px;
@@ -615,8 +616,8 @@ body {
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       z-index: 2;
-      -webkit-animation: rotate 36s linear infinite;
-      animation: rotate 36s linear infinite; }
+      -webkit-animation: rotate 27s linear infinite;
+      animation: rotate 27s linear infinite; }
     .welcome__planet:before {
       content: '';
       display: block;
@@ -1002,8 +1003,8 @@ body {
     position: relative;
     z-index: 2; }
   .tournaments__planet {
-    width: 620px;
-    height: 620px;
+    width: 550px;
+    height: 550px;
     position: absolute;
     z-index: 1; }
     .tournaments__planet img {
@@ -1031,8 +1032,8 @@ body {
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       z-index: 2;
-      -webkit-animation: rotate 36s linear infinite;
-      animation: rotate 36s linear infinite; }
+      -webkit-animation: rotate 27s linear infinite;
+      animation: rotate 27s linear infinite; }
     .tournaments__planet:before {
       content: '';
       display: block;
@@ -1049,17 +1050,17 @@ body {
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       z-index: 1;
-      -webkit-animation: rotate 36s linear infinite;
-      animation: rotate 36s linear infinite; }
+      -webkit-animation: rotate 27s linear infinite;
+      animation: rotate 27s linear infinite; }
     .tournaments__planet--1 {
-      top: -150px;
+      top: -110px;
       left: -30px; }
       .tournaments__planet--1:after {
         background-image: url(../img/track_2.png); }
       .tournaments__planet--1:before {
         background-image: url(../img/glow_2.png); }
     .tournaments__planet--2 {
-      top: -180px;
+      top: -130px;
       right: -30px; }
       .tournaments__planet--2:after {
         background-image: url(../img/track_3.png); }
@@ -1548,8 +1549,8 @@ body {
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-      -webkit-animation: rotate 36s linear infinite;
-      animation: rotate 36s linear infinite; }
+      -webkit-animation: rotate 27s linear infinite;
+      animation: rotate 27s linear infinite; }
     .team__glow--2 {
       -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
