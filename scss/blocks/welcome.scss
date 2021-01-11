@@ -29,8 +29,8 @@
     right: 0;
     z-index: 2;
     img {
-      width: 83%;
-      height: 83%;
+      width: 100%;
+      height: 100%;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -80,6 +80,9 @@
     .wrapper {
       padding-top: 65px;
     }
+    &__content {
+      max-width: none;
+    }
     .title {
       max-width: 200px;
       font-size: 45px;
@@ -91,7 +94,7 @@
       font-size: 19px;
     }
     &__btn {
-      // text-align: center;
+      text-align: center;
     }
   }
 }
