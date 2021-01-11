@@ -82,10 +82,11 @@ body {
   flex-direction: column;
   min-height: 100%;
   overflow: hidden;
-  background-image: url(../img/footer__bg.png);
-  background-size: contain;
-  background-position: bottom center;
-  background-repeat: no-repeat;
+  position: relative;
+  // background-image: url(../img/footer__bg.png);
+  // background-size: contain;
+  // background-position: bottom center;
+  // background-repeat: no-repeat;
 }
 .content {
   flex-grow: 1;
@@ -178,6 +179,12 @@ body {
   @media (max-width: $break_sm) {
     font-size: 19px;
   }
+}
+.footerImg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
 }
 @keyframes rotate {
   0% {

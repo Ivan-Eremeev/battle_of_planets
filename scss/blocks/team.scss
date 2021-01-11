@@ -1,5 +1,5 @@
 .team {
-  margin-bottom: 140px;
+  margin-bottom: 40px;
   position: relative;
   .title {
     margin-bottom: 95px;
@@ -8,6 +8,7 @@
     @include col(3);
     @include col-sm(6);
     @include col-xs(12);
+    margin-bottom: 100px;
     text-align: center;
   }
   &__img {
@@ -59,7 +60,7 @@
     }
   }
   &__content {
-    padding-left: 25px;
+    
   }
   &__name {
     max-width: 100px;

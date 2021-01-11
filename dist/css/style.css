@@ -205,10 +205,7 @@ body {
   flex-direction: column;
   min-height: 100%;
   overflow: hidden;
-  background-image: url(../img/footer__bg.png);
-  background-size: contain;
-  background-position: bottom center;
-  background-repeat: no-repeat; }
+  position: relative; }
 
 .content {
   -webkit-box-flex: 1;
@@ -310,6 +307,12 @@ body {
   @media (max-width: 769px) {
     .text {
       font-size: 19px; } }
+
+.footerImg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2; }
 
 @-webkit-keyframes rotate {
   0% {
@@ -1202,7 +1205,7 @@ body {
 
 .token {
   position: relative;
-  margin-bottom: 55px; }
+  margin-bottom: 105px; }
   .token__head {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1220,37 +1223,26 @@ body {
   .token__container {
     white-space: nowrap;
     overflow-x: auto; }
-  .token__headTable {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr;
-    max-width: 780px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    opacity: 0.5;
-    font-size: 22px; }
   .token__table {
-    display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    width: 100%;
     max-width: 780px;
     margin-left: auto;
     margin-right: auto;
     text-align: center; }
+    .token__table th {
+      padding: 0 10px 28px;
+      opacity: 0.5;
+      font-size: 22px; }
   .token__row {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr;
-    grid-column: 1 / 5;
-    padding: 19px 0;
     background: -webkit-gradient(linear, right top, left top, from(rgba(0, 15, 36, 0)), to(#000F24));
-    background: -o-linear-gradient(right, rgba(0, 15, 36, 0) 0%, #000F24 100%);
-    background: linear-gradient(270deg, rgba(0, 15, 36, 0) 0%, #000F24 100%);
-    border: 1px solid #331f36;
-    border-radius: 1px; }
-  .token__item--name {
-    text-align: left;
-    padding-left: 20px; }
+    background: -o-linear-gradient(right, rgba(0, 15, 36, 0), #000F24);
+    background: linear-gradient(270deg, rgba(0, 15, 36, 0), #000F24);
+    border: 2px solid #331f36; }
+  .token__item {
+    padding: 20px 10px; }
+    .token__item--name {
+      text-align: left;
+      padding-left: 20px; }
   .token__planet {
     max-width: 100%;
     position: absolute;
@@ -1260,7 +1252,7 @@ body {
     z-index: 1; }
   @media (max-width: 769px) {
     .token {
-      margin-bottom: 32px; }
+      margin-bottom: 75px; }
       .token__head {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1274,7 +1266,7 @@ body {
         padding-left: 0;
         text-align: center;
         line-height: 1.2; }
-      .token__headTable {
+      .token__table th {
         font-size: 19px;
         opacity: 1; }
       .token__planet {
@@ -1322,7 +1314,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     padding: 40px;
-    border: 1px solid #331f36;
+    border: 2px solid #331f36;
     position: relative; }
   .cap .title {
     position: absolute;
@@ -1377,7 +1369,7 @@ body {
   .reservation__section {
     position: absolute; }
     .reservation__section--1 {
-      top: 90px;
+      top: 84px;
       left: -196px;
       text-align: right; }
     .reservation__section--2 {
@@ -1397,7 +1389,8 @@ body {
       left: -196px;
       text-align: right; }
   .reservation__line {
-    position: absolute; }
+    position: absolute;
+    max-width: none; }
     .reservation__line--1 {
       top: 35px;
       left: 100%; }
@@ -1490,12 +1483,13 @@ body {
           width: 80%; } }
 
 .team {
-  margin-bottom: 140px;
+  margin-bottom: 40px;
   position: relative; }
   .team .title {
     margin-bottom: 95px; }
   .team__col {
     width: 25%;
+    margin-bottom: 100px;
     text-align: center; }
     @media screen and (max-width: 769px) {
       .team__col {
@@ -1541,8 +1535,6 @@ body {
       background-image: url(../img/team_glow_3.png); }
     .team__img--4:before {
       background-image: url(../img/team_glow_4.png); }
-  .team__content {
-    padding-left: 25px; }
   .team__name {
     max-width: 100px;
     margin-left: auto;
@@ -1766,6 +1758,8 @@ body {
     -webkit-transform: translate(2px, 0);
     -ms-transform: translate(2px, 0);
     transform: translate(2px, 0); }
+  .roadmap .scrollbar-inner > .scroll-element .scroll-element_outer {
+    overflow: visible; }
   .roadmap .scrollbar-inner > .scroll-element.scroll-y {
     width: 4px;
     -webkit-box-shadow: 0px 0px 10px rgba(2, 194, 255, 0.5);
@@ -1780,6 +1774,8 @@ body {
     background: linear-gradient(to bottom, #0677c1, #0de2ff, #0677c1);
     opacity: 1;
     max-height: 50px;
+    left: -1px;
+    width: 6px;
     cursor: pointer; }
   @media (max-width: 769px) {
     .roadmap {

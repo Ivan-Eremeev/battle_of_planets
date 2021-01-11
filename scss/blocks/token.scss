@@ -1,6 +1,6 @@
 .token {
   position: relative;
-  margin-bottom: 55px;
+  margin-bottom: 105px;
   &__head {
     display: flex;
     align-items: center;
@@ -18,36 +18,24 @@
     white-space: nowrap;
     overflow-x: auto;
   }
-  &__headTable {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr;
-    max-width: 780px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    opacity: 0.5;
-    font-size: 22px;
-  }
   &__table {
-    display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    width: 100%;
     max-width: 780px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    th {
+      padding: 0 10px 28px;
+      opacity: 0.5;
+      font-size: 22px;
+    }
   }
   &__row {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr;
-    grid-column: 1 / 5;
-    padding: 19px 0;
-    background: linear-gradient(270deg, rgba(0, 15, 36, 0) 0%, #000F24 100%);
-    border: 1px solid #331f36;
-    border-radius: 1px;
+    background: linear-gradient(270deg, rgba(0, 15, 36, 0), #000F24);
+    border: 2px solid #331f36;
   }
   &__item {
+    padding: 20px 10px;
     &--name {
       text-align: left;
       padding-left: 20px;
@@ -62,7 +50,7 @@
     z-index: 1;
   }
   @media (max-width: $break_sm) {
-    margin-bottom: 32px;
+    margin-bottom: 75px;
     &__head {
       flex-wrap: wrap;
       justify-content: center;
@@ -78,9 +66,11 @@
       text-align: center;
       line-height: 1.2;
     }
-    &__headTable {
-      font-size: 19px;
-      opacity: 1;
+    &__table {
+      th {
+        font-size: 19px;
+        opacity: 1;
+      }
     }
     &__planet {
       max-width: 160%;

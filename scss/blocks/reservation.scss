@@ -15,7 +15,7 @@
   &__section {
     position: absolute;
     &--1 {
-      top: 90px;
+      top: 84px;
       left: -196px;
       text-align: right;
     }
@@ -42,6 +42,7 @@
   }
   &__line {
     position: absolute;
+    max-width: none;
     &--1 {
       top: 35px;
       left: 100%;
