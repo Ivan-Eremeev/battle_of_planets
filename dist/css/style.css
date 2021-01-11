@@ -623,8 +623,8 @@ body {
     .welcome__planet:before {
       content: '';
       display: block;
-      width: 80%;
-      height: 80%;
+      width: 85%;
+      height: 85%;
       background-image: url(../img/glow_1.png);
       background-size: 120%;
       background-position: center;
