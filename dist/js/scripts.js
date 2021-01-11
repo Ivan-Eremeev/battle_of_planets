@@ -73,6 +73,9 @@ $(document).ready(function () {
 	}
 	scrollbar($('#scrollbar'));
 
+	// AOS | Анимация при скролле
+	AOS.init();
+
 	// // Блок с высотой окна браузера
 	// function screenHeight(fullHeight) {
 	// 	fullHeight.css({
