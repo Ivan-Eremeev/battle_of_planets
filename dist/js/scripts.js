@@ -6,7 +6,7 @@
 $(document).ready(function () {
 
 	// Брэйкпоинты js
-	var	breakXl = 1400,
+	var	breakXl = 1440,
 			breakLg = 1200,
 			breakMd = 1025,
 			breakSm = 769,

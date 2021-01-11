@@ -74,6 +74,7 @@
   }
   &__cometa {
     width: 900px;
+    max-width: none;
     position: absolute;
     top: -800px;
     right: -250px;
@@ -119,6 +120,7 @@
       }
     }
     &__content {
+      padding-left: 20px;
       text-align: left;
     }
     &__name {
@@ -128,6 +130,11 @@
     }
     .text {
       text-align: left;
+    }
+    &__cometa {
+      width: 800px;
+      top: -70px;
+      left: 100px;
     }
     &__meteorite_1 {
       left: -200px;

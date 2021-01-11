@@ -20,8 +20,6 @@ textarea {
 body {
   min-width: 319px;
   height: 100%;
-  background-image: url(../img/bg.jpg);
-  background-size: cover;
   background-color: #05082a;
   font-family: "AnonymousPro", sans-serif;
   font-size: 17px;
@@ -83,6 +81,8 @@ body {
   min-height: 100%;
   overflow: hidden;
   position: relative;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
   // background-image: url(../img/footer__bg.png);
   // background-size: contain;
   // background-position: bottom center;

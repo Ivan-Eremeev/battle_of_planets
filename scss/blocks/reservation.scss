@@ -77,6 +77,7 @@
   }
   &__meteorite {
     width: 700px;
+    max-width: none;
     position: absolute;
     top: 0;
     right: 140px;
@@ -87,6 +88,7 @@
   }
   &__planet {
     width: 900px;
+    max-width: none;
     position: absolute;
     top: 450px;
     left: -450px;
@@ -156,6 +158,16 @@
       &--5 {
         width: 80%;
       }
+    }
+  }
+  @media (max-width: $break_sm) {
+    &__planet {
+      top: -250px;
+      left: -550px;
+    }
+    &__meteorite {
+      top: 0;
+      right: -400px;
     }
   }
 }

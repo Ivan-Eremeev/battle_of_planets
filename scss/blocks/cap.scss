@@ -57,6 +57,7 @@
   }
   &__meteorite {
     width: 800px;
+    max-width: none;
     position: absolute;
     top: 45px;
     left: -207px;
@@ -90,6 +91,10 @@
     }
     &__icon {
       width: 70px;
+    }
+    &__meteorite {
+      top: -230px;
+      left: -450px;
     }
   }
 }

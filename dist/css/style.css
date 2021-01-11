@@ -106,8 +106,6 @@ textarea {
 body {
   min-width: 319px;
   height: 100%;
-  background-image: url(../img/bg.jpg);
-  background-size: cover;
   background-color: #05082a;
   font-family: "AnonymousPro", sans-serif;
   font-size: 17px;
@@ -205,7 +203,9 @@ body {
   flex-direction: column;
   min-height: 100%;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  background-image: url(../img/bg.jpg);
+  background-size: cover; }
 
 .content {
   -webkit-box-flex: 1;
@@ -723,7 +723,7 @@ body {
     -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
     z-index: 1; }
-  @media (max-width: 1400px) {
+  @media (max-width: 1440px) {
     .description__meteorite-1 {
       left: -100px; }
     .description__meteorite-2 {
@@ -1066,7 +1066,7 @@ body {
   .tournaments .btn {
     position: relative;
     z-index: 2; }
-  @media (max-width: 1400px) {
+  @media (max-width: 1440px) {
     .tournaments__planet {
       width: 500px;
       height: 500px; }
@@ -1329,6 +1329,7 @@ body {
       margin-left: 20px; }
   .cap__meteorite {
     width: 800px;
+    max-width: none;
     position: absolute;
     top: 45px;
     left: -207px;
@@ -1355,7 +1356,10 @@ body {
       .cap__text {
         font-size: 30px; }
       .cap__icon {
-        width: 70px; } }
+        width: 70px; }
+      .cap__meteorite {
+        top: -230px;
+        left: -450px; } }
 
 .reservation {
   text-align: center;
@@ -1416,6 +1420,7 @@ body {
     color: #AEBEF9; }
   .reservation__meteorite {
     width: 700px;
+    max-width: none;
     position: absolute;
     top: 0;
     right: 140px;
@@ -1424,6 +1429,7 @@ body {
     display: none; }
   .reservation__planet {
     width: 900px;
+    max-width: none;
     position: absolute;
     top: 450px;
     left: -450px;
@@ -1481,6 +1487,13 @@ body {
           width: 90%; }
         .reservation__gradient--5 {
           width: 80%; } }
+  @media (max-width: 769px) {
+    .reservation__planet {
+      top: -250px;
+      left: -550px; }
+    .reservation__meteorite {
+      top: 0;
+      right: -400px; } }
 
 .team {
   margin-bottom: 40px;
@@ -1545,6 +1558,7 @@ body {
     font-weight: bold; }
   .team__cometa {
     width: 900px;
+    max-width: none;
     position: absolute;
     top: -800px;
     right: -250px;
@@ -1561,7 +1575,7 @@ body {
     top: 80px;
     right: 0;
     z-index: 2; }
-  @media (max-width: 1400px) {
+  @media (max-width: 1440px) {
     .team__meteorite_1 {
       left: -300px; }
     .team__meteorite_2 {
@@ -1585,6 +1599,7 @@ body {
           width: 56px;
           height: 56px; }
       .team__content {
+        padding-left: 20px;
         text-align: left; }
       .team__name {
         max-width: none;
@@ -1592,6 +1607,10 @@ body {
         font-size: 16px; }
       .team .text {
         text-align: left; }
+      .team__cometa {
+        width: 800px;
+        top: -70px;
+        left: 100px; }
       .team__meteorite_1 {
         left: -200px; }
       .team__meteorite_2 {
