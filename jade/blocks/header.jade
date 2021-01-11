@@ -36,7 +36,7 @@ header.header#header
 						a(href="#") Пресса
 
 				.header__lang.mobile-visible
-					a(href="#").header__link
+					a(href="#").header__link.active
 						img(src="img/lang_ru.jpg", alt="")
 						span Русский
 					a(href="#").header__link
@@ -45,9 +45,9 @@ header.header#header
 		// /menu
 
 		.header__lang.mobile-hide
+			a(href="#").header__link.active
+				img(src="img/lang_ru.svg", alt="")
 			a(href="#").header__link
-				img(src="img/lang_ru.jpg", alt="")
-			a(href="#").header__link
-				img(src="img/lang_en.jpg", alt="")
+				img(src="img/lang_en.svg", alt="")
 
 // /header
