@@ -1653,7 +1653,7 @@ body {
   .roadmap .title {
     margin-bottom: 60px; }
   .roadmap__scroll {
-    max-height: 600px; }
+    max-height: 580px; }
   .roadmap__row {
     display: -webkit-box;
     display: -ms-flexbox;

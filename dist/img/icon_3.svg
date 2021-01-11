@@ -6,11 +6,11 @@
 <g filter="url(#filter1_bdi)">
 <path d="M82 29.5C82 20.0974 76.478 11.9846 68.5 8.22769M58.5 6C53.6416 6 49.1276 7.47433 45.3809 10M78.5 41.8452C74.3589 48.5398 66.9503 53 58.5 53C55.1185 53 51.9039 52.2858 48.9986 51" stroke="#FF123D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
-<g filter="url(#filter2_bdi)">
+<g filter="url(#filter2_bi)">
 <path d="M32.9952 11.5953L20.9841 16.7429C19.1937 17.4889 18 19.2794 18 21.2191V34.4985C18 38.6016 19.4921 42.481 22.1778 45.5397C23.3714 46.8826 25.0127 48.0762 27.027 49.1953L32.6222 52.1048C34.0397 52.8508 35.7556 52.8508 37.173 52.1048L42.6936 49.1953C44.4841 48.3 45.9016 47.2556 47.0952 46.062L47.5429 45.5397C50.2286 42.481 51.7206 38.6016 51.7206 34.5731V21.2937C51.7206 19.354 50.527 17.5635 48.7365 16.8175L36.8746 11.5953C35.6063 11.0731 34.2635 11.0731 32.9952 11.5953Z" fill="#98B5FF" fill-opacity="0.6"/>
 </g>
 <g filter="url(#filter3_f)">
-<path d="M21.2726 17.4352L21.2726 17.4352C19.7616 18.0648 18.75 19.5822 18.75 21.2191V34.4985C18.75 38.4157 20.1732 42.1193 22.7399 45.0432C23.855 46.2971 25.4138 47.4402 27.3822 48.5346L32.9682 51.4394L32.9715 51.4411C34.1702 52.072 35.6246 52.0721 36.8233 51.4413L21.2726 17.4352ZM21.2726 17.4352L21.2796 17.4323L33.2856 12.2868C34.3668 11.843 35.4997 11.8425 36.581 12.2855L48.4343 17.5039L48.4411 17.5069L48.448 17.5098C49.959 18.1394 50.9706 19.6568 50.9706 21.2937V34.5731C50.9706 38.4147 49.548 42.1193 46.9793 45.0449L46.9792 45.0448L46.9734 45.0516L46.5448 45.5517C45.4136 46.6787 44.0681 47.6695 42.3582 48.5245L42.3511 48.528L42.344 48.5318L36.8237 51.4411L21.2726 17.4352Z" stroke="#FFDFF4" stroke-opacity="0.2" stroke-width="1.5"/>
+<path d="M27.3822 48.5346L32.9682 51.4394L32.9715 51.4411C34.1702 52.072 35.6246 52.0721 36.8233 51.4413L27.3822 48.5346ZM27.3822 48.5346C25.4138 47.4402 23.855 46.2971 22.7399 45.0432C20.1732 42.1192 18.75 38.4157 18.75 34.4985V21.2191C18.75 19.5822 19.7616 18.0648 21.2726 17.4352L21.2726 17.4352L21.2796 17.4323L33.2856 12.2868C34.3668 11.843 35.4997 11.8425 36.581 12.2855L48.4343 17.5039L48.4411 17.5069L48.448 17.5098C49.959 18.1394 50.9706 19.6568 50.9706 21.2937V34.5731C50.9706 38.4147 49.548 42.1193 46.9793 45.0449L46.9792 45.0448L46.9734 45.0516L46.5448 45.5517C45.4136 46.6787 44.0681 47.6695 42.3582 48.5245L42.3511 48.528L42.344 48.5318L36.8237 51.4411L27.3822 48.5346Z" stroke="#FFDFF4" stroke-opacity="0.2" stroke-width="1.5"/>
 </g>
 </g>
 <defs>
@@ -40,22 +40,17 @@
 <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"/>
 <feBlend mode="normal" in2="shape" result="effect3_innerShadow"/>
 </filter>
-<filter id="filter2_bdi" x="8" y="1.20361" width="53.7206" height="61.4607" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter2_bi" x="8" y="1.20361" width="53.7206" height="61.4607" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feGaussianBlur in="BackgroundImage" stdDeviation="5"/>
 <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-<feOffset dy="-2"/>
-<feGaussianBlur stdDeviation="4"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
-<feBlend mode="normal" in2="effect1_backgroundBlur" result="effect2_dropShadow"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="-2"/>
 <feGaussianBlur stdDeviation="3.5"/>
 <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
 <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"/>
-<feBlend mode="normal" in2="shape" result="effect3_innerShadow"/>
+<feBlend mode="normal" in2="shape" result="effect2_innerShadow"/>
 </filter>
 <filter id="filter3_f" x="17" y="10.2036" width="35.7206" height="43.4607" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
