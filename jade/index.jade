@@ -59,7 +59,7 @@ block content
 								span iOS &amp; MacOS
 				img(src="img/meteorite_1.png", alt="").description__meteorite-1.js-parallaxMouse(data-direction="xy" data-intensity="2" data-speed="700")
 				img(src="img/meteorite_2.png", alt="").description__meteorite-2.js-parallaxMouse(data-direction="xy" data-intensity="2" data-speed="700" data-revers="true")
-				img(src="img/planet_bg_2.png", alt="").description__planet.description__planet--top
+				img(src="img/planet_bg_2.png", alt="").description__planet
 			//	/description
 
 			// gameplay
@@ -412,26 +412,34 @@ block content
 					h2.title Команда
 					.row
 						.team__col
-							.team__img.team__img--1
-								img(src="img/photo_1.jpg", alt="")
+							.team__img
+								.team__imgContainer
+									img(src="img/photo_1.jpg", alt="")
+									.team__glow.team__glow--1
 							.team__content
 								.team__name Алексей Кузнецов
 								.text Основатель Battle of Games
 						.team__col
-							.team__img.team__img--2
-								img(src="img/photo_2.jpg", alt="")
+							.team__img
+								.team__imgContainer
+									img(src="img/photo_2.jpg", alt="")
+									.team__glow.team__glow--2
 							.team__content
 								.team__name Анна Волкова
 								.text Менеджер по привлечению
 						.team__col
-							.team__img.team__img--3
-								img(src="img/photo_3.jpg", alt="")
+							.team__img
+								.team__imgContainer
+									img(src="img/photo_3.jpg", alt="")
+									.team__glow.team__glow--3
 							.team__content
 								.team__name Андрей Епифанцев
 								.text Front-end Разработчик
 						.team__col
-							.team__img.team__img--4
-								img(src="img/photo_4.jpg", alt="")
+							.team__img
+								.team__imgContainer
+									img(src="img/photo_4.jpg", alt="")
+									.team__glow.team__glow--4
 							.team__content
 								.team__name Анатолий Волков
 								.text Менеджер по привлечению

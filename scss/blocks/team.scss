@@ -16,6 +16,7 @@
     flex-shrink: 0;
     position: relative;
     img {
+      display: block;
       width: 135px;
       height: 135px;
       border-radius: 100%;
@@ -23,40 +24,41 @@
       position: relative; 
       z-index: 3;
     }
+  }
+  &__imgContainer {
+    display: inline-block;
+    position: relative;
+  }
+  &__glow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
     &:before {
       content: '';
       display: block;
-      width: 160%;
-      height: 160%;
+      background-image: url(../img/team_glow.png);
       background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
       position: absolute;
+      width: 220%;
+      height: 220%;
       top: 50%;
       left: 50%;
       transform: translate(-50%,-50%);
       animation: rotate 36s linear infinite;
-      z-index: 2;
     }
     &--1 {
-      &:before {
-        background-image: url(../img/team_glow_1.png);
-      }
+      
     }
     &--2 {
-      &:before {
-        background-image: url(../img/team_glow_2.png);
-      }
+      transform: rotate(90deg);
     }
     &--3 {
-      &:before {
-        background-image: url(../img/team_glow_3.png);
-      }
+      transform: rotate(45deg);
     }
     &--4 {
-      &:before {
-        background-image: url(../img/team_glow_4.png);
-      }
+      transform: rotate(180deg);
     }
   }
   &__content {

@@ -719,7 +719,7 @@ body {
   .description__planet {
     max-width: none;
     position: absolute;
-    top: -300px;
+    top: -180px;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
@@ -1518,6 +1518,7 @@ body {
     flex-shrink: 0;
     position: relative; }
     .team__img img {
+      display: block;
       width: 135px;
       height: 135px;
       border-radius: 100%;
@@ -1525,31 +1526,42 @@ body {
       object-fit: cover;
       position: relative;
       z-index: 3; }
-    .team__img:before {
+  .team__imgContainer {
+    display: inline-block;
+    position: relative; }
+  .team__glow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; }
+    .team__glow:before {
       content: '';
       display: block;
-      width: 160%;
-      height: 160%;
+      background-image: url(../img/team_glow.png);
       background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
       position: absolute;
+      width: 220%;
+      height: 220%;
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       -webkit-animation: rotate 36s linear infinite;
-      animation: rotate 36s linear infinite;
-      z-index: 2; }
-    .team__img--1:before {
-      background-image: url(../img/team_glow_1.png); }
-    .team__img--2:before {
-      background-image: url(../img/team_glow_2.png); }
-    .team__img--3:before {
-      background-image: url(../img/team_glow_3.png); }
-    .team__img--4:before {
-      background-image: url(../img/team_glow_4.png); }
+      animation: rotate 36s linear infinite; }
+    .team__glow--2 {
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg); }
+    .team__glow--3 {
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    .team__glow--4 {
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg); }
   .team__name {
     max-width: 100px;
     margin-left: auto;
