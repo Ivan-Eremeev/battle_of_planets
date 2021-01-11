@@ -23,7 +23,7 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
 </filter>
-<filter id="filter1_bdi" x="34.1309" y="-5.25" width="59.1193" height="69.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter1_bdi" x="34.1306" y="-5.25" width="59.1193" height="69.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feGaussianBlur in="BackgroundImage" stdDeviation="5"/>
 <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
