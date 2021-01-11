@@ -21,8 +21,8 @@
     position: absolute;
     z-index: 1;
     img {
-      width: 75%;
-      height: 75%;
+      width: 100%;
+      height: 100%;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -49,8 +49,7 @@
       display: block;
       width: 100%;
       height: 100%;
-      background-image: url(../img/glow_1.png);
-      background-size: 120%;
+      background-size: 110%;
       background-position: center;
       background-repeat: no-repeat;
       position: absolute;
@@ -66,12 +65,18 @@
       &:after {
         background-image: url(../img/track_2.png);
       }
+      &:before {
+        background-image: url(../img/glow_2.png);
+      }
     }
     &--2 {
       top: -180px;
       right: -30px;
       &:after {
         background-image: url(../img/track_3.png);
+      }
+      &:before {
+        background-image: url(../img/glow_3.png);
       }
     }
   }
