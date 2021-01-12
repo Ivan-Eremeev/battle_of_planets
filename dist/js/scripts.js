@@ -465,6 +465,67 @@ $(document).ready(function () {
 	};
 	parallaxMove($('.js-parallaxMouse'));
 
+	// Анимация в блоке token
+	function animateSkills(block) {
+		var row = block.find('.js-token-row');
+		row.each(function () {
+			var scrollTop = false,
+				countNumberStatus = true,
+				countNum = $(this).find('.token__percent'),
+				line = $(this).find('.token__line'),
+				blockPosition = countNum.offset().top,
+				value = countNum.data('value'),
+				valDuration = countNum.data('duration');
+			countNum.html(0);
+			animate();
+			$(window).scroll(function () {
+				animate();
+			});
+			function animate() {
+				scrollTop = $(window).scrollTop() + $(window).height();
+				if (scrollTop > blockPosition && countNumberStatus) {
+					block.addClass('active');
+					$({ numberValue: 0 }).animate({ numberValue: value }, {
+						duration: valDuration,
+						easing: "swing",
+						step: function (val) {
+							countNum.html(Math.ceil(val) + ' %');
+						}
+					});
+					line.animate({
+						height: value + '%'
+					}, valDuration);
+					countNumberStatus = false;
+				}
+			}
+		});
+	};
+	animateSkills($(".token__table"));
+
+	// Присвоение класса при скролле
+	function addClassForScroll(block) {
+		if (block.length) {
+			block.each(function () {
+				var $this = $(this),
+						scrollTop = false,
+						countNumberStatus = true,
+						blockPosition = $this.offset().top;
+				addClass();
+				$(window).scroll(function () {
+					addClass();
+				})
+				function addClass() {
+					scrollTop = $(window).scrollTop() + $(window).height();
+					if (scrollTop > blockPosition && countNumberStatus) {
+						$this.addClass('active');
+						countNumberStatus = false;
+					}
+				}
+			})
+		}
+	}
+	addClassForScroll($('.js-addClassScroll'));
+
 	// // Показать еще новости
 	// function limitBlock(wrap, newsNum) {
 	// 	if (!newsNum) {

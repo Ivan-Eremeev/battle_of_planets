@@ -19,21 +19,46 @@
     overflow-x: auto;
   }
   &__table {
-    width: 100%;
-    max-width: 780px;
+    width: 780px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    th {
-      padding: 0 10px 28px;
-      opacity: 0.5;
-      font-size: 22px;
+    &.active {
+      .token__row {
+        &--active {
+          &:after {
+            opacity: 1;
+          }
+          &:before {
+            width: 100%;
+            opacity: 1;
+          }
+        }
+      }
+      // .token__item {
+      //   &--percent {
+      //     &:after {
+      //       height: 100%;
+      //     }
+      //   }
+      // }
     }
   }
   &__row {
+    display: flex;
     background: linear-gradient(270deg, rgba(0, 15, 36, 0), #000F24);
     border: 2px solid #331f36;
     position: relative;
+    &:not(:last-child) {
+      border-bottom: none;
+    }
+    &--head {
+      padding: 0 10px 28px;
+      opacity: 0.5;
+      font-size: 22px;
+      background: transparent;
+      border: none;
+    }
     &--active {
       &:after {
         content: '';
@@ -46,23 +71,68 @@
         top: 50%;
         left: -70px;
         transform: translate(0,-50%);
+        opacity: 0;
+        transition: 1s;
       }
       &:before {
         content: '';
         display: block;
         position: absolute;
-        width: 100%;
+        top: -2px;
+        left: -2px;
+        width: 0;
         height: 100%;
-        border: 1px solid #ff123d;
+        border: 2px solid #ff123d;
+        z-index: 2;
+        transition: width 1s;
+        opacity: 0;
       }
     }
   }
   &__item {
     padding: 20px 10px;
+    flex-shrink: 0;
+    position: relative;
+    &:nth-child(1) {
+      flex-grow: 1;
+    }
+    &:nth-child(2) {
+      width: 220px;
+    }
+    &:nth-child(3) {
+      width: 150px;
+    }
+    &:nth-child(4) {
+      width: 150px;
+    }
     &--name {
       text-align: left;
       padding-left: 20px;
     }
+    // &--percent {
+    //   position: relative;
+    //   &:after {
+    //     content: '';
+    //     display: block;
+    //     position: absolute;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     height: 0;
+    //     background-color: #008DF2;
+    //     opacity: 0.2;
+    //     transition: height 1s;
+    //   }
+    // }
+  }
+  &__line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 10%;
+    background-color: #008DF2;
+    opacity: 0.2;
   }
   &__planet {
     max-width: 100%;
@@ -71,6 +141,15 @@
     right: 0;
     opacity: 0.5;
     z-index: 1;
+  }
+  @media (max-width: $break_md) {
+    &__row {
+      &--active {
+        &:after {
+          display: none;
+        }
+      }
+    }
   }
   @media (max-width: $break_sm) {
     margin-bottom: 75px;
