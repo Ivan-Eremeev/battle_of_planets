@@ -206,7 +206,7 @@ body {
   min-height: 100%;
   overflow: hidden;
   position: relative;
-  background-image: url(../img/bg.jpg);
+  background-image: url(../img/bg.png);
   background-size: cover; }
 
 .content {
@@ -635,8 +635,7 @@ body {
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       z-index: 1;
-      -webkit-animation: rotate 36s linear infinite;
-      animation: rotate 36s linear infinite; }
+      animation: rotate 36s linear infinite reverse; }
   @media (max-width: 1050px) {
     .welcome__planet {
       right: -180px; } }
@@ -1013,12 +1012,16 @@ body {
         left: -34px;
         -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
-        transform: translate(0, 0);
-        background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 18, 61, 0)), to(rgba(255, 18, 61, 0.4)));
-        background: -o-linear-gradient(bottom, rgba(255, 18, 61, 0) 0%, rgba(255, 18, 61, 0.4) 100%);
-        background: linear-gradient(360deg, rgba(255, 18, 61, 0) 0%, rgba(255, 18, 61, 0.4) 100%); }
+        transform: translate(0, 0); }
         .methods__num:after {
-          display: none; } }
+          bottom: auto;
+          top: -100%;
+          background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 18, 61, 0)), to(rgba(255, 18, 61, 0.4)));
+          background: -o-linear-gradient(bottom, rgba(255, 18, 61, 0) 0%, rgba(255, 18, 61, 0.4) 100%);
+          background: linear-gradient(360deg, rgba(255, 18, 61, 0) 0%, rgba(255, 18, 61, 0.4) 100%); }
+        .methods__num.active:after {
+          bottom: auto;
+          top: 0; } }
 
 .tournaments {
   text-align: center;
@@ -1083,8 +1086,7 @@ body {
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       z-index: 1;
-      -webkit-animation: rotate 27s linear infinite;
-      animation: rotate 27s linear infinite; }
+      animation: rotate 27s linear infinite reverse; }
     .tournaments__planet--1 {
       top: -110px;
       left: -30px; }
@@ -1167,7 +1169,7 @@ body {
       .crafting__cometa {
         max-width: none;
         width: 400px;
-        top: -190px;
+        top: 0;
         right: -80px; } }
 
 .award {
@@ -1258,9 +1260,14 @@ body {
       padding-left: 20px; }
   .token__container {
     white-space: nowrap;
-    overflow-x: auto; }
+    overflow-x: auto;
+    margin-left: -30px;
+    margin-right: -30px; }
+  .token__pd {
+    width: 840px;
+    padding-left: 30px;
+    padding-right: 30px; }
   .token__table {
-    width: 780px;
     margin-left: auto;
     margin-right: auto;
     text-align: center; }
@@ -1276,7 +1283,7 @@ body {
     background: -webkit-gradient(linear, right top, left top, from(rgba(0, 15, 36, 0)), to(#000F24));
     background: -o-linear-gradient(right, rgba(0, 15, 36, 0), #000F24);
     background: linear-gradient(270deg, rgba(0, 15, 36, 0), #000F24);
-    border: 2px solid #331f36;
+    border: 3px solid #331f36;
     position: relative; }
     .token__row:not(:last-child) {
       border-bottom: none; }
@@ -1311,7 +1318,7 @@ body {
       left: -2px;
       width: 0;
       height: 100%;
-      border: 2px solid #ff123d;
+      border: 3px solid #ff123d;
       z-index: 2;
       -webkit-transition: width 1s;
       -o-transition: width 1s;
@@ -1376,7 +1383,14 @@ body {
         max-width: 160%;
         top: -90px;
         right: -150px;
-        opacity: 0.8; } }
+        opacity: 0.8; }
+      .token__container {
+        margin-left: -20px;
+        margin-right: -20px; }
+      .token__pd {
+        width: 840px;
+        padding-left: 20px;
+        padding-right: 20px; } }
 
 .cap {
   margin-bottom: 147px;
@@ -1417,7 +1431,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     padding: 40px;
-    border: 2px solid #331f36;
+    border: 3px solid #331f36;
     position: relative; }
   .cap .title {
     position: absolute;
@@ -1915,7 +1929,8 @@ body {
     max-height: 50px;
     left: -1px;
     width: 6px;
-    cursor: pointer; }
+    cursor: pointer;
+    border-radius: 0; }
   @media (max-width: 769px) {
     .roadmap {
       margin-bottom: 82px; }

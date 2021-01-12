@@ -122,9 +122,16 @@
       top: 0;
       left: -34px;
       transform: translate(0,0);
-      background: linear-gradient(360deg, rgba(255, 18, 61, 0) 0%, rgba(255, 18, 61, 0.4) 100%);
       &:after {
-        display: none;
+        bottom: auto;
+        top: -100%;
+        background: linear-gradient(360deg, rgba(255, 18, 61, 0) 0%, rgba(255, 18, 61, 0.4) 100%);
+      }
+      &.active {
+        &:after {
+          bottom: auto;
+          top: 0;
+        }
       }
     }
   }

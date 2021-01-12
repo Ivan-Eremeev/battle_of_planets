@@ -58,7 +58,7 @@
       left: 50%;
       transform: translate(-50%,-50%);
       z-index: 1;
-      animation: rotate 27s linear infinite;
+      animation: rotate 27s linear infinite reverse;
     }
     &--1 {
       top: -110px;
