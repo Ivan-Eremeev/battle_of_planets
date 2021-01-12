@@ -1266,10 +1266,10 @@ body {
   .token__pd {
     width: 840px;
     padding-left: 30px;
-    padding-right: 30px; }
-  .token__table {
+    padding-right: 30px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; }
+  .token__table {
     text-align: center; }
     .token__table.active .token__row--active:after {
       opacity: 1; }
