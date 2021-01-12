@@ -535,7 +535,6 @@ $(document).ready(function () {
 					$window = $(window);
 			$window.scroll(function () {
 			persent = parseInt($window.scrollTop() / 7);
-			console.log(persent);
 			img.css('transform','rotate('+ persent + 'deg' +')')
 			})
 		})

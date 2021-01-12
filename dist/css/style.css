@@ -1463,6 +1463,11 @@ body {
       .cap__meteorite {
         top: -230px;
         left: -450px; } }
+  @media (max-width: 500px) {
+    .cap__col--2 .cap__icon {
+      margin-right: 10px; }
+    .cap__item {
+      padding: 30px 10px 20px 10px; } }
 
 .reservation {
   text-align: center;
