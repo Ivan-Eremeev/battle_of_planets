@@ -526,6 +526,22 @@ $(document).ready(function () {
 	}
 	addClassForScroll($('.js-addClassScroll'));
 
+	// Вращение планеты при скролле
+	function planetRotate(block) {
+		block.each(function () {
+			var $this = $(this),
+					img = $this.find('img'),
+					persent = false,
+					$window = $(window);
+			$window.scroll(function () {
+			persent = parseInt($window.scrollTop() / 7);
+			console.log(persent);
+			img.css('transform','rotate('+ persent + 'deg' +')')
+			})
+		})
+	}
+	planetRotate($('.js-rotateForScroll'));
+
 	// // Показать еще новости
 	// function limitBlock(wrap, newsNum) {
 	// 	if (!newsNum) {
