@@ -412,17 +412,6 @@ body {
     bottom: -6px; }
 
 /*
-   * Arrow Right
-   */
-.hamburger--arrow-r.is-active .hamburger-inner::before {
-  -webkit-transform: translate3d(3.6px, 0, 0) rotate(45deg) scale(0.7, 1);
-  transform: translate3d(3.6px, 0, 0) rotate(45deg) scale(0.7, 1); }
-
-.hamburger--arrow-r.is-active .hamburger-inner::after {
-  -webkit-transform: translate3d(3.6px, 0, 0) rotate(-45deg) scale(0.7, 1);
-  transform: translate3d(3.6px, 0, 0) rotate(-45deg) scale(0.7, 1); }
-
-/*
    * Arrow Alt Right
    */
 .hamburger--arrowalt-r .hamburger-inner::before {
