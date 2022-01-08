@@ -10,7 +10,7 @@
     "gulp-concat": "*",
     "gulp-concat-css": "*",
     "gulp-group-css-media-queries": "*",
-    "gulp-imagemin": "*",
+    "gulp-imagemin": "7.1.0",
     "gulp-less": "*",
     "gulp-minify": "*",
     "gulp-plumber": "*",
@@ -19,8 +19,9 @@
     "gulp-rigger": "*",
     "gulp-sass": "*",
     "gulp-uglify": "*",
-    "imagemin-pngquant": "*"
+    "gulp-webp": "*",
+    "imagemin-pngquant": "*",
+    "sass": "*"
   },
-  "dependencies": {},
   "browserslist": "last 5 version"
 }

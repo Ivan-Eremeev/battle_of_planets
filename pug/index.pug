@@ -1,4 +1,4 @@
-extends blocks/base.jade
+extends blocks/base.pug
 
 block title 
 	title Battle of planets
@@ -19,7 +19,7 @@ block content
 
 	.page
 
-		include blocks/header.jade
+		include blocks/header.pug
 		
 		.content
 
@@ -34,7 +34,7 @@ block content
 								span.btn__text Зарегистрироваться
 								span.btn__arrow
 					.welcome__planet
-						img(src="img/planet_1.png", alt="")
+						img(src="img/planet_1.webp", alt="")
 			//	/welcome
 
 			// description
@@ -58,9 +58,9 @@ block content
 							.description__item
 								img(src="img/apple_icon.svg", alt="").description__icon
 								span iOS &amp; MacOS
-				img(src="img/meteorite_1.png", alt="").description__meteorite-1.js-parallaxMouse(data-direction="xy" data-intensity="2" data-speed="700")
-				img(src="img/meteorite_2.png", alt="").description__meteorite-2.js-parallaxMouse(data-direction="xy" data-intensity="2" data-speed="700" data-revers="true")
-				img(src="img/planet_bg_2.png", alt="").description__planet
+				img(src="img/meteorite_1.webp", alt="").description__meteorite-1.js-parallaxMouse(data-direction="xy" data-intensity="2" data-speed="700")
+				img(src="img/meteorite_2.webp", alt="").description__meteorite-2.js-parallaxMouse(data-direction="xy" data-intensity="2" data-speed="700" data-revers="true")
+				img(src="img/planet_bg_2.webp", alt="").description__planet
 			//	/description
 
 			// gameplay
@@ -88,7 +88,7 @@ block content
 										img(src="img/icon_4_new.svg", alt="")
 									.gameplay__text 160 000 000 000 000 000 возможных комбинаций улучшений
 						.gameplay__video.js-video
-							//- img(src="img/preview.jpg", alt="")
+							//- img(src="img/preview.webp", alt="")
 							//- video(src="video/video.mp4")
 							<iframe src="https://www.youtube.com/embed/77GgORIScfs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							//- .gameplay__play#play
@@ -140,9 +140,9 @@ block content
 						span.btn__text В разработке
 						span.btn__arrow
 				.tournaments__planet.tournaments__planet--1
-					img(src="img/planet_2.png", alt="")
+					img(src="img/planet_2.webp", alt="")
 				.tournaments__planet.tournaments__planet--2
-					img(src="img/planet_3.png", alt="")
+					img(src="img/planet_3.webp", alt="")
 			//	/tournaments
 
 			// crafting
@@ -159,7 +159,7 @@ block content
 						.btn.btn--disable
 							span.btn__text В разработке
 							span.btn__arrow
-				img(src="img/cometa_1.png", alt="" data-aos="fade-down-left" data-aos-duration="1000").crafting__cometa
+				img(src="img/cometa_1.webp", alt="" data-aos="fade-down-left" data-aos-duration="1000").crafting__cometa
 			//	/crafting
 
 			// award
@@ -181,8 +181,8 @@ block content
 								.text Редкие и уникальные<br>NFT-карты
 							.text
 								span Позволят побеждать более сильных противников и получать больше лута и планетарных ресурсов
-				img(src="img/meteorite_3.png", alt="").award__meteorite.js-parallaxMouse(data-direction="xy" data-intensity="2" data-speed="700")
-				img(src="img/cometa_2.png", alt="" data-aos="fade-down-right" data-aos-duration="1000").award__cometa
+				img(src="img/meteorite_3.webp", alt="").award__meteorite.js-parallaxMouse(data-direction="xy" data-intensity="2" data-speed="700")
+				img(src="img/cometa_2.webp", alt="" data-aos="fade-down-right" data-aos-duration="1000").award__cometa
 			//	/award
 
 			// token
@@ -227,7 +227,7 @@ block content
 									.token__item
 										.token__percent(data-value="10" data-duration="2000") 10 %
 										.token__line
-				img(src="img/planet_bg_1.png", alt="").token__planet
+				img(src="img/planet_bg_1.webp", alt="").token__planet
 			//	/token
 
 			// cap
@@ -248,7 +248,7 @@ block content
 									img(src="img/icon_8_new.svg", alt="").cap__icon
 									.cap__text 5 000 000
 										span $
-				img(src="img/meteorite_4.png", alt="").cap__meteorite.js-parallaxMouse(data-direction="xy" data-intensity="2" data-speed="700" data-revers="true")
+				img(src="img/meteorite_4.webp", alt="").cap__meteorite.js-parallaxMouse(data-direction="xy" data-intensity="2" data-speed="700" data-revers="true")
 			//	/cap
 
 			// reservation
@@ -287,9 +287,9 @@ block content
 								.reservation__title 40%
 								.reservation__gradient.reservation__gradient--5
 								.reservation__text Все sale-этапы
-				img(src="img/meteorite_5.png", alt="").reservation__meteorite.js-parallaxMouse(data-direction="xy" data-intensity="3" data-speed="700")
+				img(src="img/meteorite_5.webp", alt="").reservation__meteorite.js-parallaxMouse(data-direction="xy" data-intensity="3" data-speed="700")
 				.js-rotateForScroll.reservation__planet
-					img(src="img/planet_4.png", alt="")
+					img(src="img/planet_4.webp", alt="")
 			//	/reservation
 
 			// roadmap
@@ -427,7 +427,7 @@ block content
 						.team__col
 							.team__img
 								.team__imgContainer
-									img(src="img/photo_1.jpg", alt="")
+									img(src="img/photo_1.webp", alt="")
 									.team__glow.team__glow--1
 							.team__content
 								.team__name Алексей Кузнецов
@@ -435,7 +435,7 @@ block content
 						.team__col
 							.team__img
 								.team__imgContainer
-									img(src="img/photo_2.jpg", alt="")
+									img(src="img/photo_2.webp", alt="")
 									.team__glow.team__glow--2
 							.team__content
 								.team__name Анна Волкова
@@ -443,7 +443,7 @@ block content
 						.team__col
 							.team__img
 								.team__imgContainer
-									img(src="img/photo_3.jpg", alt="")
+									img(src="img/photo_3.webp", alt="")
 									.team__glow.team__glow--3
 							.team__content
 								.team__name Андрей Епифанцев
@@ -451,20 +451,20 @@ block content
 						.team__col
 							.team__img
 								.team__imgContainer
-									img(src="img/photo_4.jpg", alt="")
+									img(src="img/photo_4.webp", alt="")
 									.team__glow.team__glow--4
 							.team__content
 								.team__name Анатолий Волков
 								.text Менеджер по привлечению
-				img(src="img/cometa_3.png", alt="" data-aos="fade-down-left" data-aos-duration="1000").team__cometa
-				img(src="img/meteorite_6.png", alt="").team__meteorite_1.js-parallaxMouse(data-direction="xy" data-intensity="2" data-speed="700")
-				img(src="img/meteorite_7.png", alt="").team__meteorite_2.js-parallaxMouse(data-direction="xy" data-intensity="2" data-speed="700" data-revers="true")
+				img(src="img/cometa_3.webp", alt="" data-aos="fade-down-left" data-aos-duration="1000").team__cometa
+				img(src="img/meteorite_6.webp", alt="").team__meteorite_1.js-parallaxMouse(data-direction="xy" data-intensity="2" data-speed="700")
+				img(src="img/meteorite_7.webp", alt="").team__meteorite_2.js-parallaxMouse(data-direction="xy" data-intensity="2" data-speed="700" data-revers="true")
 			// /team
 			
-		include blocks/footer.jade
+		include blocks/footer.pug
 
 		.footerImg
-			img(src="img/footer__bg.png", alt="")
+			img(src="img/footer__bg.webp", alt="")
 			//- img(src="img/rocket_1.gif", alt="").footerImg__rocket
 
 block js-libs
